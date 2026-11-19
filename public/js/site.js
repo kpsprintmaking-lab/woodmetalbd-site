@@ -27,6 +27,15 @@
     });
   });
 
+  // Phone share sheet (Messenger, WhatsApp, etc.) where the browser has one
+  var shareBtn = $('#share-btn');
+  if (shareBtn && navigator.share) {
+    shareBtn.hidden = false;
+    shareBtn.addEventListener('click', function () {
+      navigator.share({ title: shareBtn.dataset.title, url: shareBtn.dataset.url }).catch(function () {});
+    });
+  }
+
   // Listing search (filters cards already on the page)
   var q = $('#q');
   if (q) {

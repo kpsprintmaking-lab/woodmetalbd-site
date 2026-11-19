@@ -33,6 +33,8 @@ const pName = (lang, p) => `${catBySlug[p.cat].one[lang]} ${num(lang, p.model)}`
 const productsIn = (cat) => products.filter((p) => p.cat === cat);
 
 const ICON = {
+  fb: '<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M14 8V6.2c0-.8.2-1.2 1.4-1.2H17V2h-2.6C11.6 2 10.6 3.4 10.6 5.9V8H8.5v3h2.1v11H14V11h2.6l.4-3z"/></svg>',
+  share: '<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>',
   wa: '<svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21l1.7-4.6A8.5 8.5 0 1 1 8 19.6L3 21z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1.2-1.4-2-1-.9.9a3.6 3.6 0 0 1-2.3-2.3l.9-.9-1-2L9 9.5z"/></svg>',
   phone: '<svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>',
   chisel: '<svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l9-9"/><path d="M14 4l6 6-3 3-6-6z"/></svg>',
@@ -45,7 +47,7 @@ const ICON = {
 
 // ---------- layout ----------
 function layout(opts) { return waTargets(layoutRaw(opts)); }
-function layoutRaw({ lang, pathname, altPath, title, description, body, image, jsonld, noindex }) {
+function layoutRaw({ lang, pathname, altPath, title, description, body, image, imageMeta, ogType, price, jsonld, noindex }) {
   const t = T[lang];
   const canonical = cfg.siteUrl + url(lang, pathname);
   const other = t.other;
@@ -65,11 +67,18 @@ function layoutRaw({ lang, pathname, altPath, title, description, body, image, j
 <link rel="alternate" hreflang="en" href="${cfg.siteUrl + url('en', lang === 'en' ? pathname : altPath ?? pathname)}">
 <link rel="alternate" hreflang="x-default" href="${cfg.siteUrl + url('bn', lang === 'bn' ? pathname : altPath ?? pathname)}">
 ${noindex ? '<meta name="robots" content="noindex">' : ''}
-<meta property="og:type" content="website">
+<meta property="og:type" content="${ogType || 'website'}">
+<meta property="og:locale" content="${lang === 'bn' ? 'bn_BD' : 'en_US'}">
 <meta property="og:site_name" content="Wood Metal">
 <meta property="og:title" content="${esc(fullTitle)}">
 <meta property="og:description" content="${esc(description || t.desc)}">
 <meta property="og:image" content="${ogImg}">
+${imageMeta && imageMeta.w ? `<meta property="og:image:width" content="${imageMeta.w}">
+<meta property="og:image:height" content="${imageMeta.h}">
+<meta property="og:image:alt" content="${esc(imageMeta.alt)}">` : ''}
+<meta name="twitter:card" content="summary_large_image">
+${price ? `<meta property="product:price:amount" content="${price}">
+<meta property="product:price:currency" content="BDT">` : ''}
 <meta property="og:url" content="${canonical}">
 <meta name="theme-color" content="#111111">
 <link rel="icon" href="/favicon-48.png" type="image/png">
@@ -415,6 +424,11 @@ ${breadcrumbs(lang, [['/', t.home], [`/furniture/${c.slug}/`, c[lang]], [pathnam
         <a class="btn btn-dark" href="tel:${cfg.phones[0].tel}">${ICON.phone}<span>${t.callBtn}</span></a>
         <a class="btn btn-outline" href="#quote">${t.quoteBtn}</a>
       </div>
+      <div class="share-row">
+        <span>${lang === 'bn' ? 'শেয়ার করুন' : 'Share'}:</span>
+        <a class="btn btn-share" href="https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(pageUrl)}">${ICON.fb}<span>Facebook</span></a>
+        <button type="button" class="btn btn-share" id="share-btn" hidden data-url="${pageUrl}" data-title="${esc(name)}">${ICON.share}<span>${lang === 'bn' ? 'অন্যভাবে' : 'More'}</span></button>
+      </div>
     </div>
     <dl class="specs">${specs.map(([k, v]) => `<div><dt>${k}</dt><dd>${v}</dd></div>`).join('')}</dl>
   </div>
@@ -436,7 +450,7 @@ ${related.length ? `<section class="wrap section"><div class="section-head"><h2>
     material: p.wood, size: p.size || undefined,
     offers: { '@type': 'Offer', priceCurrency: 'BDT', price: p.price, availability: 'https://schema.org/MadeToOrder', url: pageUrl },
   };
-  return layout({ lang, pathname, title: `${name} (${p.code})`, description: `${name}: ${c.blurb[lang]} ${p.size ? t.size + ': ' + p.size + '.' : ''}`, body, image: p.images[0].src, jsonld });
+  return layout({ lang, pathname, title: `${name} (${p.code})`, description: `${name}: ${c.blurb[lang]} ${p.size ? t.size + ': ' + p.size + '.' : ''}`, body, image: p.images[0].src, imageMeta: { w: p.images[0].w, h: p.images[0].h, alt: name }, ogType: 'product', price: p.price, jsonld });
 }
 
 function customPage(lang) {
