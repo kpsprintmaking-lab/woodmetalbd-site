@@ -23,7 +23,7 @@ Run `node build.mjs` and open `dist/`, or `npm run dev` for the full site with f
 ## Cloudflare setup (one time)
 
 1. Cloudflare dashboard → Workers & Pages → Create → Pages → **Connect to Git** → pick this repo.
-2. Build command: `node build.mjs` · Output directory: `dist` · Production branch: `main`.
+2. Build command: `node build.mjs` · Output directory: `dist` · Production branch: the repo default branch (now `claude/init`).
 3. The D1 binding `DB` → database `woodmetal-leads` is already in `wrangler.toml` (the database and tables exist).
 4. Settings → Variables and secrets: add **`ADMIN_PASSWORD`** (secret) for `/admin/`.
 5. Email (optional): sign up at resend.com **with woodmetalbd@gmail.com**, create an API key and add it as secret **`RESEND_API_KEY`**. Until the domain is verified in Resend, mail can only go to that signup address, which is what we want. Optional: `LEAD_EMAIL_TO`, `LEAD_EMAIL_FROM`.
