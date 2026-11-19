@@ -91,7 +91,8 @@ h1{font-size:24px;margin:6px 0 14px}h2{font-size:19px;margin:22px 0 10px}
 .photos{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}.photos img{width:120px;height:120px;object-fit:cover;border-radius:6px;border:1px solid #EDEDED}
 input,select,textarea,button{font:inherit}
 .field{min-height:38px;border:1.5px solid #D1D1D1;border-radius:6px;padding:6px 10px;background:#fff;width:100%}
-.btn{display:inline-flex;align-items:center;gap:6px;min-height:38px;background:#111;color:#fff;border:0;padding:6px 16px;border-radius:6px;text-decoration:none;cursor:pointer;font-weight:600}
+[hidden]{display:none!important}
+.btn{display:inline-flex;justify-content:center;align-items:center;gap:6px;min-height:38px;background:#111;color:#fff;border:0;padding:6px 16px;border-radius:6px;text-decoration:none;cursor:pointer;font-weight:600}
 .btn.y{background:#FECC2F;color:#111}.btn.g{background:#C38820;color:#111}.btn.o{background:#fff;color:#111;border:1.5px solid #111}.btn.r{background:#343434}.btn.s{min-height:32px;padding:3px 10px;font-size:14px}
 .inline{display:inline-flex;gap:6px;align-items:center;margin:0}
 pre{white-space:pre-wrap;font:inherit;margin:6px 0}
@@ -125,13 +126,35 @@ function page(title, body, { user, on, flash, err } = {}) {
     <form method="post" action="/admin/logout"><button>লগআউট</button></form></nav>` : '';
   return html(`<!doctype html><html lang="bn"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
 <title>${esc(title)} · Wood Metal অ্যাডমিন</title><link rel="icon" href="/favicon-48.png">
+<link rel="manifest" href="/admin/manifest.webmanifest"><meta name="theme-color" content="#111111"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="WM অ্যাডমিন">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&display=swap"><style>${CSS}</style></head>
 <body>${user ? `<header><strong>Wood Metal · অ্যাডমিন</strong>${nav}</header>` : ''}<main>
 ${flash ? `<div class="flash">${esc(flash)}</div>` : ''}${err ? `<div class="flash err">${esc(err)}</div>` : ''}
-${body}</main></body></html>`);
+${body}</main>
+<script>if('serviceWorker'in navigator)navigator.serviceWorker.register('/admin/sw.js',{scope:'/admin/'}).catch(function(){});
+var ip;addEventListener('beforeinstallprompt',function(e){e.preventDefault();ip=e;var b=document.getElementById('install');if(b)b.hidden=false;});
+document.addEventListener('click',function(e){if(e.target.id==='install'&&ip){ip.prompt();ip=null;e.target.hidden=true;}});</script>
+</body></html>`);
 }
 const flashOf = (url) => ({ flash: url.searchParams.get('ok') || '', err: url.searchParams.get('err') || '' });
 const withMsg = (path, key, msg) => `${path}${path.includes('?') ? '&' : '?'}${key}=${encodeURIComponent(msg)}`;
+
+// ---------- phone app (installable admin) ----------
+const MANIFEST = {
+  name: 'Wood Metal অ্যাডমিন', short_name: 'WM অ্যাডমিন', lang: 'bn',
+  start_url: '/admin/', scope: '/admin/', display: 'standalone',
+  background_color: '#FFFFFF', theme_color: '#111111',
+  icons: [
+    { src: '/icon-192.png', sizes: '192x192', type: 'image/png', purpose: 'any' },
+    { src: '/icon-512.png', sizes: '512x512', type: 'image/png', purpose: 'any' },
+    { src: '/icon-512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' },
+  ],
+};
+// Network only: the app always shows fresh leads and prices. Offline shows a short note.
+const SW = `self.addEventListener('install',function(){self.skipWaiting()});
+self.addEventListener('activate',function(e){e.waitUntil(self.clients.claim())});
+self.addEventListener('fetch',function(e){if(e.request.mode!=='navigate')return;e.respondWith(fetch(e.request).catch(function(){return new Response('<meta charset=utf-8><meta name=viewport content="width=device-width"><p style="font-family:sans-serif;padding:24px">ইন্টারনেট নেই। সংযোগ ফিরলে আবার চেষ্টা করুন।</p>',{headers:{'content-type':'text/html; charset=utf-8'}})}))});`;
 
 // ---------- entry ----------
 export async function onRequest({ request, env, params }) {
@@ -142,6 +165,8 @@ export async function onRequest({ request, env, params }) {
   const post = request.method === 'POST';
   if (post && !sameOrigin(request, url)) return new Response('Forbidden', { status: 403 });
 
+  if (route === 'manifest.webmanifest') return new Response(JSON.stringify(MANIFEST), { headers: { 'content-type': 'application/manifest+json', 'cache-control': 'public, max-age=3600' } });
+  if (route === 'sw.js') return new Response(SW, { headers: { 'content-type': 'text/javascript', 'cache-control': 'no-cache' } });
   if (route === 'login') return post ? doLogin(request, env, url) : loginPage(url);
   const user = await currentUser(request, env);
   if (!user) return redirect('/admin/login' + (route ? `?next=${encodeURIComponent(url.pathname + url.search)}` : ''));
@@ -174,7 +199,12 @@ function loginPage(url, err, nextIn) {
     <label>ইউজারনেম<input class="field" name="username" autocomplete="username" required autofocus></label>
     <label>পাসওয়ার্ড<input class="field" type="password" name="password" autocomplete="current-password" required></label>
     <button class="btn y">লগইন</button>
-  </form></div>`, { err });
+  </form>
+  <button type="button" id="install" class="btn" hidden style="margin-top:14px;width:100%">📲 ফোনে অ্যাপ হিসেবে রাখুন</button>
+  <details style="margin-top:14px" class="muted"><summary>ফোনে অ্যাপের মতো রাখবেন কীভাবে?</summary>
+  <p><b>অ্যান্ড্রয়েড (Chrome):</b> উপরের ডান কোণে ⋮ চাপুন → "Add to Home screen" বা "Install app" → "Install"।</p>
+  <p><b>আইফোন (Safari):</b> নিচের শেয়ার বাটন (□↑) চাপুন → "Add to Home Screen" → "Add"।</p>
+  <p>এরপর ফোনের হোম স্ক্রিনে Wood Metal আইকন থেকে সরাসরি খুলবে।</p></details></div>`, { err });
 }
 
 async function doLogin(request, env, url) {

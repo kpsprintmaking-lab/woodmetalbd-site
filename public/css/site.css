@@ -273,7 +273,11 @@ textarea.field { resize: vertical; }
 .site-footer a:hover { color: var(--yellow); }
 .social { display: flex; gap: 16px; margin-top: 14px; }
 .social a { color: var(--yellow); }
-.footer-bottom { border-top: 1px solid var(--charcoal); padding-top: 14px; padding-bottom: 24px; font-size: 14px; color: var(--grey-2); }
+/* Staff login link to /admin */
+.footer-bottom { display: flex; justify-content: flex-start; column-gap: 24px; align-items: center; row-gap: 6px; flex-wrap: wrap; }
+.staff-login { display: inline-flex; align-items: center; gap: 6px; color: var(--grey-2); text-decoration: none; padding: 6px 0; }
+.staff-login:hover, .staff-login:focus-visible { color: var(--yellow); }
+.footer-bottom { border-top: 1px solid var(--charcoal); padding-top: 14px; padding-bottom: 96px; font-size: 14px; color: var(--grey-2); }
 
 /* floating WhatsApp */
 .chat { position: fixed; right: 18px; bottom: 18px; z-index: 50; display: flex; flex-direction: column; align-items: flex-end; gap: 12px; }

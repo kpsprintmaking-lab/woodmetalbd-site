@@ -134,7 +134,7 @@ ${body}
       </div>
     </div>
   </div>
-  <div class="wrap footer-bottom">© ${num(lang, new Date().getFullYear())} Wood Metal</div>
+  <div class="wrap footer-bottom">© ${num(lang, new Date().getFullYear())} Wood Metal<a class="staff-login" href="/admin/login" rel="nofollow"><svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg>${lang === 'bn' ? 'স্টাফ লগইন' : 'Staff login'}</a></div>
 </footer>
 ${chatBox(lang)}
 <script type="application/json" id="form-msgs">${JSON.stringify({ errPhone: t.errPhone, errGeneric: t.errGeneric, errMany: t.errMany })}</script>
