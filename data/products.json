@@ -1,0 +1,4285 @@
+[
+ {
+  "slug": "almirah-329-a",
+  "cat": "almirahs",
+  "model": "329 A",
+  "code": "329 A",
+  "sku": "WM-ALM-329-A",
+  "price": 48720,
+  "regular_price": null,
+  "size": "L-36\" x W-22\" x H-78\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/almirah-329-a-1.webp",
+    "sm": "/img/p/almirah-329-a-1-sm.webp",
+    "w": 500,
+    "h": 500
+   }
+  ],
+  "old_id": 65
+ },
+ {
+  "slug": "almirah-329-b",
+  "cat": "almirahs",
+  "model": "329 B",
+  "code": "329 B",
+  "sku": "WM-ALM-329 B",
+  "price": 48720,
+  "regular_price": null,
+  "size": "L-36\" x W-22\" x H-78\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/almirah-329-b-1.webp",
+    "sm": "/img/p/almirah-329-b-1-sm.webp",
+    "w": 500,
+    "h": 500
+   }
+  ],
+  "old_id": 142
+ },
+ {
+  "slug": "almirah-336",
+  "cat": "almirahs",
+  "model": "336",
+  "code": "336",
+  "sku": "WM-ALM-336",
+  "price": 68280,
+  "regular_price": null,
+  "size": "L-42\" x W-22\" x H-78\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/almirah-336-1.webp",
+    "sm": "/img/p/almirah-336-1-sm.webp",
+    "w": 500,
+    "h": 500
+   }
+  ],
+  "old_id": 144
+ },
+ {
+  "slug": "almirah-337",
+  "cat": "almirahs",
+  "model": "337",
+  "code": "337",
+  "sku": "WM-ALM-337",
+  "price": 192000,
+  "regular_price": null,
+  "size": "L-96\" x W-22\" x H-96\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/almirah-337-1.webp",
+    "sm": "/img/p/almirah-337-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 146
+ },
+ {
+  "slug": "almirah-338",
+  "cat": "almirahs",
+  "model": "338",
+  "code": "338",
+  "sku": "WM-ALM-338",
+  "price": 243000,
+  "regular_price": null,
+  "size": "L-108\" x W-22\" x H-108\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/almirah-338-1.webp",
+    "sm": "/img/p/almirah-338-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 148
+ },
+ {
+  "slug": "almirah-341",
+  "cat": "almirahs",
+  "model": "341",
+  "code": "341",
+  "sku": "WM-ALM-341",
+  "price": 107250,
+  "regular_price": null,
+  "size": "L-66\" x W-22\" x H-78\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/almirah-341-1.webp",
+    "sm": "/img/p/almirah-341-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 149
+ },
+ {
+  "slug": "almirah-342",
+  "cat": "almirahs",
+  "model": "342",
+  "code": "342",
+  "sku": "WM-ALM-342",
+  "price": 68280,
+  "regular_price": null,
+  "size": "L-42\" x W-22\" x H-78\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/almirah-342-1.webp",
+    "sm": "/img/p/almirah-342-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 152
+ },
+ {
+  "slug": "almirah-346",
+  "cat": "almirahs",
+  "model": "346",
+  "code": "346",
+  "sku": "WM-ALM-346",
+  "price": 71040,
+  "regular_price": null,
+  "size": "L-42\" x W-22\" x H-78\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/almirah-346-1.webp",
+    "sm": "/img/p/almirah-346-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 154
+ },
+ {
+  "slug": "almirah-348",
+  "cat": "almirahs",
+  "model": "348",
+  "code": "348",
+  "sku": "WM-ALM-348",
+  "price": 71040,
+  "regular_price": null,
+  "size": "L-42\" x W-22\" x H-78\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/almirah-348-1.webp",
+    "sm": "/img/p/almirah-348-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 156
+ },
+ {
+  "slug": "almirah-351",
+  "cat": "almirahs",
+  "model": "351",
+  "code": "351",
+  "sku": "WM-ALM-351",
+  "price": 68280,
+  "regular_price": null,
+  "size": "L-42\" x W-22\" x H-78\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/almirah-351-1.webp",
+    "sm": "/img/p/almirah-351-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 158
+ },
+ {
+  "slug": "almirah-356",
+  "cat": "almirahs",
+  "model": "356",
+  "code": "356",
+  "sku": "WM-ALM-356",
+  "price": 48720,
+  "regular_price": null,
+  "size": "L-30\" x W-23\" x H-78\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/almirah-356-1.webp",
+    "sm": "/img/p/almirah-356-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 160
+ },
+ {
+  "slug": "almirah-358",
+  "cat": "almirahs",
+  "model": "358",
+  "code": "358",
+  "sku": "WM-ALM-358",
+  "price": 68280,
+  "regular_price": null,
+  "size": "L-42\" x W-22\" x H-78\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/almirah-358-1.webp",
+    "sm": "/img/p/almirah-358-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 162
+ },
+ {
+  "slug": "almirah-359",
+  "cat": "almirahs",
+  "model": "359",
+  "code": "359",
+  "sku": "WM-ALM-359",
+  "price": 68280,
+  "regular_price": null,
+  "size": "L-42\" x W-22\" x H-78\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/almirah-359-1.webp",
+    "sm": "/img/p/almirah-359-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 164
+ },
+ {
+  "slug": "almirah-360",
+  "cat": "almirahs",
+  "model": "360",
+  "code": "360",
+  "sku": "WM-ALM-360",
+  "price": 68280,
+  "regular_price": null,
+  "size": "L-42\" x W-22\" x H-78\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/almirah-360-1.webp",
+    "sm": "/img/p/almirah-360-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 166
+ },
+ {
+  "slug": "almirah-361",
+  "cat": "almirahs",
+  "model": "361",
+  "code": "361",
+  "sku": "WM-ALM-361",
+  "price": 71040,
+  "regular_price": null,
+  "size": "L-42\" x W-22\" x H-78\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/almirah-361-1.webp",
+    "sm": "/img/p/almirah-361-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 168
+ },
+ {
+  "slug": "almirah-362",
+  "cat": "almirahs",
+  "model": "362",
+  "code": "362",
+  "sku": "WM-Almirah-362",
+  "price": 107250,
+  "regular_price": null,
+  "size": "L-66\" x W-20\" x H-78\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/almirah-362-1.webp",
+    "sm": "/img/p/almirah-362-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 170
+ },
+ {
+  "slug": "bed-443",
+  "cat": "beds",
+  "model": "443",
+  "code": "BD-443",
+  "sku": "WM-Bed-443",
+  "price": 50760,
+  "regular_price": null,
+  "size": "L-78\" x W-60\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/bed-443-1.webp",
+    "sm": "/img/p/bed-443-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 173
+ },
+ {
+  "slug": "bed-453",
+  "cat": "beds",
+  "model": "453",
+  "code": "BD-453",
+  "sku": "WM-Bed-453",
+  "price": 48360,
+  "regular_price": null,
+  "size": "L-78\" x W-60\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/bed-453-1.webp",
+    "sm": "/img/p/bed-453-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 175
+ },
+ {
+  "slug": "bed-455",
+  "cat": "beds",
+  "model": "455",
+  "code": "BD-455",
+  "sku": "WM-Bed-455",
+  "price": 47640,
+  "regular_price": null,
+  "size": "L-78\" x W-60\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/bed-455-1.webp",
+    "sm": "/img/p/bed-455-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 177
+ },
+ {
+  "slug": "bed-464",
+  "cat": "beds",
+  "model": "464",
+  "code": "BD-464",
+  "sku": "WM-Bed-464",
+  "price": 48600,
+  "regular_price": null,
+  "size": "L-78\" x W-60\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/bed-464-1.webp",
+    "sm": "/img/p/bed-464-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 179
+ },
+ {
+  "slug": "bed-469",
+  "cat": "beds",
+  "model": "469",
+  "code": "BD-469",
+  "sku": "WM-Bed-469",
+  "price": 47640,
+  "regular_price": null,
+  "size": "L-78\" x W-60\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/bed-469-1.webp",
+    "sm": "/img/p/bed-469-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 181
+ },
+ {
+  "slug": "bed-473",
+  "cat": "beds",
+  "model": "473",
+  "code": "BD-473",
+  "sku": "WM-Bed-473",
+  "price": 46200,
+  "regular_price": null,
+  "size": "L-78\" x W-60\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/bed-473-1.webp",
+    "sm": "/img/p/bed-473-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 183
+ },
+ {
+  "slug": "bed-475",
+  "cat": "beds",
+  "model": "475",
+  "code": "BD-475",
+  "sku": "WM-Bed-475",
+  "price": 63000,
+  "regular_price": null,
+  "size": "L-78\" x W-60\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/bed-475-1.webp",
+    "sm": "/img/p/bed-475-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 185
+ },
+ {
+  "slug": "bed-481",
+  "cat": "beds",
+  "model": "481",
+  "code": "BD-481",
+  "sku": "WM-Bed-481",
+  "price": 50760,
+  "regular_price": null,
+  "size": "L-78\" x W-60\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/bed-481-1.webp",
+    "sm": "/img/p/bed-481-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 187
+ },
+ {
+  "slug": "bed-487",
+  "cat": "beds",
+  "model": "487",
+  "code": "BD-487",
+  "sku": "WM-Bed-487",
+  "price": 52800,
+  "regular_price": null,
+  "size": "L-78\" x W-60\" x H-10\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/bed-487-1.webp",
+    "sm": "/img/p/bed-487-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 189
+ },
+ {
+  "slug": "bed-508",
+  "cat": "beds",
+  "model": "508",
+  "code": "BD-508",
+  "sku": "WM-Bed-508",
+  "price": 48360,
+  "regular_price": null,
+  "size": "L-78\" x W-60\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/bed-508-1.webp",
+    "sm": "/img/p/bed-508-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 192
+ },
+ {
+  "slug": "bed-509",
+  "cat": "beds",
+  "model": "509",
+  "code": "BD-509",
+  "sku": "WM-Bed-509",
+  "price": 73080,
+  "regular_price": null,
+  "size": "L-78\" x W-60\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/bed-509-1.webp",
+    "sm": "/img/p/bed-509-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 194
+ },
+ {
+  "slug": "bed-cfs-23",
+  "cat": "beds",
+  "model": "CFS-23",
+  "code": "BD/03/CFS/23",
+  "sku": "WM-Bed-CFS-23",
+  "price": 50760,
+  "regular_price": null,
+  "size": "L-78\" x W-60\"x H-16\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/bed-cfs-23-1.webp",
+    "sm": "/img/p/bed-cfs-23-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 196
+ },
+ {
+  "slug": "bed-sbd-505",
+  "cat": "beds",
+  "model": "SBD-505",
+  "code": "SBD- 0505",
+  "sku": "WM-Bed-SBD- 505",
+  "price": 29040,
+  "regular_price": null,
+  "size": "L-81\" x W-39\"x H-14\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/bed-sbd-505-1.webp",
+    "sm": "/img/p/bed-sbd-505-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 198
+ },
+ {
+  "slug": "bed-513",
+  "cat": "beds",
+  "model": "513",
+  "code": "BD-513",
+  "sku": "WM-Bed-513",
+  "price": 50760,
+  "regular_price": null,
+  "size": "L-78\" x W-60\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/bed-513-1.webp",
+    "sm": "/img/p/bed-513-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/bed-513-2.webp",
+    "sm": "/img/p/bed-513-2-sm.webp",
+    "w": 1000,
+    "h": 667
+   }
+  ],
+  "old_id": 275
+ },
+ {
+  "slug": "sofa-575",
+  "cat": "sofas",
+  "model": "575",
+  "code": "SS-575",
+  "sku": "WM-SS-575",
+  "price": 76200,
+  "regular_price": null,
+  "size": "Standard",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/sofa-575-1.webp",
+    "sm": "/img/p/sofa-575-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/sofa-575-2.webp",
+    "sm": "/img/p/sofa-575-2-sm.webp",
+    "w": 1000,
+    "h": 667
+   }
+  ],
+  "old_id": 279
+ },
+ {
+  "slug": "sofa-543",
+  "cat": "sofas",
+  "model": "543",
+  "code": "SS-543",
+  "sku": "WM-SS-543",
+  "price": 102000,
+  "regular_price": null,
+  "size": "Standard",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/sofa-543-1.webp",
+    "sm": "/img/p/sofa-543-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/sofa-543-2.webp",
+    "sm": "/img/p/sofa-543-2-sm.webp",
+    "w": 1000,
+    "h": 667
+   }
+  ],
+  "old_id": 284
+ },
+ {
+  "slug": "sofa-547",
+  "cat": "sofas",
+  "model": "547",
+  "code": "SS-547",
+  "sku": "WM-SS-547",
+  "price": 78600,
+  "regular_price": null,
+  "size": "Standard",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/sofa-547-1.webp",
+    "sm": "/img/p/sofa-547-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/sofa-547-2.webp",
+    "sm": "/img/p/sofa-547-2-sm.webp",
+    "w": 1000,
+    "h": 667
+   }
+  ],
+  "old_id": 324
+ },
+ {
+  "slug": "sofa-557",
+  "cat": "sofas",
+  "model": "557",
+  "code": "SS-557",
+  "sku": "WM-SS-557",
+  "price": 90000,
+  "regular_price": null,
+  "size": "Standard",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/sofa-557-1.webp",
+    "sm": "/img/p/sofa-557-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/sofa-557-2.webp",
+    "sm": "/img/p/sofa-557-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 327
+ },
+ {
+  "slug": "sofa-564",
+  "cat": "sofas",
+  "model": "564",
+  "code": "SS-564",
+  "sku": "WM-ALM-351-1-2-2",
+  "price": 78600,
+  "regular_price": null,
+  "size": "Standard",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/sofa-564-1.webp",
+    "sm": "/img/p/sofa-564-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/sofa-564-2.webp",
+    "sm": "/img/p/sofa-564-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 328
+ },
+ {
+  "slug": "sofa-566",
+  "cat": "sofas",
+  "model": "566",
+  "code": "SS-566",
+  "sku": "WM-SS-566",
+  "price": 90600,
+  "regular_price": null,
+  "size": "Standard",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/sofa-566-1.webp",
+    "sm": "/img/p/sofa-566-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/sofa-566-2.webp",
+    "sm": "/img/p/sofa-566-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 348
+ },
+ {
+  "slug": "sofa-572",
+  "cat": "sofas",
+  "model": "572",
+  "code": "SS-572",
+  "sku": "WM-SS-572",
+  "price": 76200,
+  "regular_price": null,
+  "size": "Standard",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/sofa-572-1.webp",
+    "sm": "/img/p/sofa-572-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/sofa-572-2.webp",
+    "sm": "/img/p/sofa-572-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 349
+ },
+ {
+  "slug": "sofa-570",
+  "cat": "sofas",
+  "model": "570",
+  "code": "SS-570",
+  "sku": "WM-SS-570",
+  "price": 76200,
+  "regular_price": null,
+  "size": "Standard",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/sofa-570-1.webp",
+    "sm": "/img/p/sofa-570-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/sofa-570-2.webp",
+    "sm": "/img/p/sofa-570-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 410
+ },
+ {
+  "slug": "sofa-579",
+  "cat": "sofas",
+  "model": "579",
+  "code": "SS-579",
+  "sku": "WM-SS-579",
+  "price": 78600,
+  "regular_price": null,
+  "size": "Standard",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/sofa-579-1.webp",
+    "sm": "/img/p/sofa-579-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/sofa-579-2.webp",
+    "sm": "/img/p/sofa-579-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 414
+ },
+ {
+  "slug": "sofa-577",
+  "cat": "sofas",
+  "model": "577",
+  "code": "SS-577",
+  "sku": "WM-SS-577",
+  "price": 81000,
+  "regular_price": null,
+  "size": "Standard",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/sofa-577-1.webp",
+    "sm": "/img/p/sofa-577-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/sofa-577-2.webp",
+    "sm": "/img/p/sofa-577-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 415
+ },
+ {
+  "slug": "sofa-578",
+  "cat": "sofas",
+  "model": "578",
+  "code": "SS-578",
+  "sku": "WM-SS-578",
+  "price": 76200,
+  "regular_price": null,
+  "size": "Standard",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/sofa-578-1.webp",
+    "sm": "/img/p/sofa-578-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/sofa-578-2.webp",
+    "sm": "/img/p/sofa-578-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 416
+ },
+ {
+  "slug": "sofa-569",
+  "cat": "sofas",
+  "model": "569",
+  "code": "SS-569",
+  "sku": "WM-SS-569",
+  "price": 73800,
+  "regular_price": null,
+  "size": "Standard",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/sofa-569-1.webp",
+    "sm": "/img/p/sofa-569-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/sofa-569-2.webp",
+    "sm": "/img/p/sofa-569-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 417
+ },
+ {
+  "slug": "sofa-575-2",
+  "cat": "sofas",
+  "model": "575-2",
+  "code": "SS-575",
+  "sku": "WM-SS-575-2",
+  "price": 73800,
+  "regular_price": null,
+  "size": "Standard",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/sofa-575-2-1.webp",
+    "sm": "/img/p/sofa-575-2-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/sofa-575-2-2.webp",
+    "sm": "/img/p/sofa-575-2-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 418
+ },
+ {
+  "slug": "sofa-574",
+  "cat": "sofas",
+  "model": "574",
+  "code": "SS-574",
+  "sku": "WM-SS-574",
+  "price": 78600,
+  "regular_price": null,
+  "size": "Standard",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/sofa-574-1.webp",
+    "sm": "/img/p/sofa-574-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/sofa-574-2.webp",
+    "sm": "/img/p/sofa-574-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 419
+ },
+ {
+  "slug": "sofa-576",
+  "cat": "sofas",
+  "model": "576",
+  "code": "SS-576",
+  "sku": "WM-SS-576",
+  "price": 81000,
+  "regular_price": null,
+  "size": "Standard",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/sofa-576-1.webp",
+    "sm": "/img/p/sofa-576-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/sofa-576-2.webp",
+    "sm": "/img/p/sofa-576-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 420
+ },
+ {
+  "slug": "sofa-559",
+  "cat": "sofas",
+  "model": "559",
+  "code": "SS-559",
+  "sku": "WM-SS-559",
+  "price": 77880,
+  "regular_price": null,
+  "size": "Standard",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/sofa-559-1.webp",
+    "sm": "/img/p/sofa-559-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/sofa-559-2.webp",
+    "sm": "/img/p/sofa-559-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 421
+ },
+ {
+  "slug": "sofa-554",
+  "cat": "sofas",
+  "model": "554",
+  "code": "SS-554",
+  "sku": "WM-SS-554",
+  "price": 67200,
+  "regular_price": null,
+  "size": "Standard",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/sofa-554-1.webp",
+    "sm": "/img/p/sofa-554-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/sofa-554-2.webp",
+    "sm": "/img/p/sofa-554-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 423
+ },
+ {
+  "slug": "sofa-580",
+  "cat": "sofas",
+  "model": "580",
+  "code": "SS-580",
+  "sku": "WM-SS-580",
+  "price": 76200,
+  "regular_price": null,
+  "size": "Standard",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/sofa-580-1.webp",
+    "sm": "/img/p/sofa-580-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/sofa-580-2.webp",
+    "sm": "/img/p/sofa-580-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 424
+ },
+ {
+  "slug": "sofa-cum-bed-653",
+  "cat": "sofa-cum-beds",
+  "model": "653",
+  "code": "SCB 653",
+  "sku": "WM-SCB-653",
+  "price": 45600,
+  "regular_price": null,
+  "size": "L-78\" x W-30\" x H-16\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/sofa-cum-bed-653-1.webp",
+    "sm": "/img/p/sofa-cum-bed-653-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/sofa-cum-bed-653-2.webp",
+    "sm": "/img/p/sofa-cum-bed-653-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 425
+ },
+ {
+  "slug": "sofa-cum-bed-658",
+  "cat": "sofa-cum-beds",
+  "model": "658",
+  "code": "SCB 658",
+  "sku": "WM-SCB-658",
+  "price": 45600,
+  "regular_price": null,
+  "size": "L-78\" x W-30\" x H-16\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/sofa-cum-bed-658-1.webp",
+    "sm": "/img/p/sofa-cum-bed-658-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/sofa-cum-bed-658-2.webp",
+    "sm": "/img/p/sofa-cum-bed-658-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 427
+ },
+ {
+  "slug": "sofa-cum-bed-667",
+  "cat": "sofa-cum-beds",
+  "model": "667",
+  "code": "SCB 667",
+  "sku": "WM-SCB-667-1",
+  "price": 54000,
+  "regular_price": null,
+  "size": "L-78\" x W-30\" x H-16\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/sofa-cum-bed-667-1.webp",
+    "sm": "/img/p/sofa-cum-bed-667-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/sofa-cum-bed-667-2.webp",
+    "sm": "/img/p/sofa-cum-bed-667-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 428
+ },
+ {
+  "slug": "sofa-cum-bed-659",
+  "cat": "sofa-cum-beds",
+  "model": "659",
+  "code": "SCB 659",
+  "sku": "WM-SCB-659-1-1",
+  "price": 45600,
+  "regular_price": null,
+  "size": "L-78\" x W-30\" x H-16\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/sofa-cum-bed-659-1.webp",
+    "sm": "/img/p/sofa-cum-bed-659-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/sofa-cum-bed-659-2.webp",
+    "sm": "/img/p/sofa-cum-bed-659-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 429
+ },
+ {
+  "slug": "sofa-cum-bed-657",
+  "cat": "sofa-cum-beds",
+  "model": "657",
+  "code": "SCB 657",
+  "sku": "WM-SCB-657-1-1-1",
+  "price": 45600,
+  "regular_price": null,
+  "size": "L-78\" x W-30\" x H-16\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/sofa-cum-bed-657-1.webp",
+    "sm": "/img/p/sofa-cum-bed-657-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/sofa-cum-bed-657-2.webp",
+    "sm": "/img/p/sofa-cum-bed-657-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 434
+ },
+ {
+  "slug": "sofa-cum-bed-656",
+  "cat": "sofa-cum-beds",
+  "model": "656",
+  "code": "SCB 656",
+  "sku": "WM-SCB-656-1",
+  "price": 45600,
+  "regular_price": null,
+  "size": "L-78\" x W-30\" x H-16\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/sofa-cum-bed-656-1.webp",
+    "sm": "/img/p/sofa-cum-bed-656-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/sofa-cum-bed-656-2.webp",
+    "sm": "/img/p/sofa-cum-bed-656-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 435
+ },
+ {
+  "slug": "bookshelf-1003",
+  "cat": "bookshelves",
+  "model": "1003",
+  "code": "BS-1003",
+  "sku": "WM-BS-1003",
+  "price": 36720,
+  "regular_price": null,
+  "size": "L-36\" x W-11\" x H-72\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/bookshelf-1003-1.webp",
+    "sm": "/img/p/bookshelf-1003-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/bookshelf-1003-2.webp",
+    "sm": "/img/p/bookshelf-1003-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/bookshelf-1003-3.webp",
+    "sm": "/img/p/bookshelf-1003-3-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 436
+ },
+ {
+  "slug": "bookshelf-1009",
+  "cat": "bookshelves",
+  "model": "1009",
+  "code": "BS-1009",
+  "sku": "WM-BS-1003-1",
+  "price": 61200,
+  "regular_price": null,
+  "size": "L-60\" x W-11\" x H-72\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/bookshelf-1009-1.webp",
+    "sm": "/img/p/bookshelf-1009-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/bookshelf-1009-2.webp",
+    "sm": "/img/p/bookshelf-1009-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 448
+ },
+ {
+  "slug": "bookshelf-1010",
+  "cat": "bookshelves",
+  "model": "1010",
+  "code": "BS-1010",
+  "sku": "WM-BS-1010-1",
+  "price": 48960,
+  "regular_price": null,
+  "size": "L-48\" x W-11\" x H-72\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/bookshelf-1010-1.webp",
+    "sm": "/img/p/bookshelf-1010-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/bookshelf-1010-2.webp",
+    "sm": "/img/p/bookshelf-1010-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 449
+ },
+ {
+  "slug": "bookshelf-1016",
+  "cat": "bookshelves",
+  "model": "1016",
+  "code": "BS-1016",
+  "sku": "WM-BS-1016-1-1",
+  "price": 48960,
+  "regular_price": null,
+  "size": "L-48\" x W-11\" x H-72\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/bookshelf-1016-1.webp",
+    "sm": "/img/p/bookshelf-1016-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/bookshelf-1016-2.webp",
+    "sm": "/img/p/bookshelf-1016-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 452
+ },
+ {
+  "slug": "bookshelf-1022",
+  "cat": "bookshelves",
+  "model": "1022",
+  "code": "BS-1022",
+  "sku": "WM-BS-1022-1-1-1",
+  "price": 110160,
+  "regular_price": null,
+  "size": "L-108\" x W-11\" x H-72\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/bookshelf-1022-1.webp",
+    "sm": "/img/p/bookshelf-1022-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/bookshelf-1022-2.webp",
+    "sm": "/img/p/bookshelf-1022-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 453
+ },
+ {
+  "slug": "bookshelf-1024",
+  "cat": "bookshelves",
+  "model": "1024",
+  "code": "BS-1024",
+  "sku": "WM-BS-1024-1-1-1",
+  "price": 36720,
+  "regular_price": null,
+  "size": "L-36\" x W-11\" x H-72\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/bookshelf-1024-1.webp",
+    "sm": "/img/p/bookshelf-1024-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/bookshelf-1024-2.webp",
+    "sm": "/img/p/bookshelf-1024-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 454
+ },
+ {
+  "slug": "bookshelf-1026",
+  "cat": "bookshelves",
+  "model": "1026",
+  "code": "BS-1026",
+  "sku": "WM-BS-1026-1-1-1-1",
+  "price": 36720,
+  "regular_price": null,
+  "size": "L-36\" x W-11\" x H-72\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/bookshelf-1026-1.webp",
+    "sm": "/img/p/bookshelf-1026-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/bookshelf-1026-2.webp",
+    "sm": "/img/p/bookshelf-1026-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 455
+ },
+ {
+  "slug": "bookshelf-1028",
+  "cat": "bookshelves",
+  "model": "1028",
+  "code": "BS-1028",
+  "sku": "WM-BS-1028-1-1-1-1-1",
+  "price": 73440,
+  "regular_price": null,
+  "size": "L-72\" x W-11\" x H-72\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/bookshelf-1028-1.webp",
+    "sm": "/img/p/bookshelf-1028-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/bookshelf-1028-2.webp",
+    "sm": "/img/p/bookshelf-1028-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 457
+ },
+ {
+  "slug": "bookshelf-1029",
+  "cat": "bookshelves",
+  "model": "1029",
+  "code": "BS-1029",
+  "sku": "WM-BS-1029-1-1-1-1-1-1",
+  "price": 73440,
+  "regular_price": null,
+  "size": "L-72\" x W-11\" x H-72\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/bookshelf-1029-1.webp",
+    "sm": "/img/p/bookshelf-1029-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/bookshelf-1029-2.webp",
+    "sm": "/img/p/bookshelf-1029-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 458
+ },
+ {
+  "slug": "bookshelf-1037",
+  "cat": "bookshelves",
+  "model": "1037",
+  "code": "BS-1037",
+  "sku": "WM-BS-1037-1-1-1-1-1-1-1",
+  "price": 30600,
+  "regular_price": null,
+  "size": "L-30\" x W-11\" x H-72\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/bookshelf-1037-1.webp",
+    "sm": "/img/p/bookshelf-1037-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/bookshelf-1037-2.webp",
+    "sm": "/img/p/bookshelf-1037-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 459
+ },
+ {
+  "slug": "bookshelf-csf-23",
+  "cat": "bookshelves",
+  "model": "CSF-23",
+  "code": "BS/04/CFS/23",
+  "sku": "WM-BS-CFS-23-1",
+  "price": 39840,
+  "regular_price": null,
+  "size": "L-36\" x W-11\" x H-78\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/bookshelf-csf-23-1.webp",
+    "sm": "/img/p/bookshelf-csf-23-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/bookshelf-csf-23-2.webp",
+    "sm": "/img/p/bookshelf-csf-23-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 460
+ },
+ {
+  "slug": "dining-set-057",
+  "cat": "dining-sets",
+  "model": "057",
+  "code": "DT-057",
+  "sku": "WM-DT-057-1-1",
+  "price": 89040,
+  "regular_price": null,
+  "size": "Table—3’ X 6’ ft",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/dining-set-057-1.webp",
+    "sm": "/img/p/dining-set-057-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/dining-set-057-2.webp",
+    "sm": "/img/p/dining-set-057-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 461
+ },
+ {
+  "slug": "dining-set-40",
+  "cat": "dining-sets",
+  "model": "40",
+  "code": "DT-40",
+  "sku": "WM-DT-40-1-1-1",
+  "price": 64800,
+  "regular_price": null,
+  "size": "Table L-48’’, W-48’’, H-30’’",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/dining-set-40-1.webp",
+    "sm": "/img/p/dining-set-40-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/dining-set-40-2.webp",
+    "sm": "/img/p/dining-set-40-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 474
+ },
+ {
+  "slug": "dining-set-55",
+  "cat": "dining-sets",
+  "model": "55",
+  "code": "DT-55",
+  "sku": "WM-DT-50-1-1-1-1",
+  "price": 66960,
+  "regular_price": null,
+  "size": "Table L-59’’, W-35’’, H-30’’",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/dining-set-55-1.webp",
+    "sm": "/img/p/dining-set-55-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/dining-set-55-2.webp",
+    "sm": "/img/p/dining-set-55-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 475
+ },
+ {
+  "slug": "dining-set-46-b",
+  "cat": "dining-sets",
+  "model": "46 B",
+  "code": "DT-46 B",
+  "sku": "WM-DT-50-1-1-1-1-1",
+  "price": 66960,
+  "regular_price": null,
+  "size": "Table L-59’’, W-35’’, H-30’’",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/dining-set-46-b-1.webp",
+    "sm": "/img/p/dining-set-46-b-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/dining-set-46-b-2.webp",
+    "sm": "/img/p/dining-set-46-b-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 477
+ },
+ {
+  "slug": "dining-set-46",
+  "cat": "dining-sets",
+  "model": "46",
+  "code": "DT-46",
+  "sku": "WM-DT-50-1-1-1-1-1-1",
+  "price": 66960,
+  "regular_price": null,
+  "size": "Table L-59’’, W-35’’, H-30’’",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/dining-set-46-1.webp",
+    "sm": "/img/p/dining-set-46-1-sm.webp",
+    "w": 400,
+    "h": 400
+   },
+   {
+    "src": "/img/p/dining-set-46-2.webp",
+    "sm": "/img/p/dining-set-46-2-sm.webp",
+    "w": 400,
+    "h": 400
+   }
+  ],
+  "old_id": 478
+ },
+ {
+  "slug": "dining-set-60",
+  "cat": "dining-sets",
+  "model": "60",
+  "code": "DT-60",
+  "sku": "WM-DT-60-2",
+  "price": 63360,
+  "regular_price": null,
+  "size": "Table L-48’’, W-48’’, H-30’’",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/dining-set-60-1.webp",
+    "sm": "/img/p/dining-set-60-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/dining-set-60-2.webp",
+    "sm": "/img/p/dining-set-60-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 480
+ },
+ {
+  "slug": "dining-set-61",
+  "cat": "dining-sets",
+  "model": "61",
+  "code": "DT-61",
+  "sku": "WM-DT-60-2-1",
+  "price": 60000,
+  "regular_price": null,
+  "size": "Table L-35’’, W-59’’, H-30’’",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/dining-set-61-1.webp",
+    "sm": "/img/p/dining-set-61-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/dining-set-61-2.webp",
+    "sm": "/img/p/dining-set-61-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 482
+ },
+ {
+  "slug": "sofa-cum-bed-672",
+  "cat": "sofa-cum-beds",
+  "model": "672",
+  "code": "SCB 672",
+  "sku": "WM-SCB-672-1-1-1",
+  "price": 48000,
+  "regular_price": null,
+  "size": "60\" x 78\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/sofa-cum-bed-672-1.webp",
+    "sm": "/img/p/sofa-cum-bed-672-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/sofa-cum-bed-672-2.webp",
+    "sm": "/img/p/sofa-cum-bed-672-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 484
+ },
+ {
+  "slug": "sofa-cum-bed-673",
+  "cat": "sofa-cum-beds",
+  "model": "673",
+  "code": "SCB 673",
+  "sku": "WM-SCB-673-1-1-1-1",
+  "price": 29700,
+  "regular_price": 39600,
+  "size": "60\" x 78\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/sofa-cum-bed-673-1.webp",
+    "sm": "/img/p/sofa-cum-bed-673-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/sofa-cum-bed-673-2.webp",
+    "sm": "/img/p/sofa-cum-bed-673-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/sofa-cum-bed-673-3.webp",
+    "sm": "/img/p/sofa-cum-bed-673-3-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 489
+ },
+ {
+  "slug": "crockery-shelf-183",
+  "cat": "crockery-shelves",
+  "model": "183",
+  "code": "CRS 183",
+  "sku": "WM-CRS-183-1",
+  "price": 59280,
+  "regular_price": null,
+  "size": "48\" x 16\" x 78\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/crockery-shelf-183-1.webp",
+    "sm": "/img/p/crockery-shelf-183-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/crockery-shelf-183-2.webp",
+    "sm": "/img/p/crockery-shelf-183-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 490
+ },
+ {
+  "slug": "crockery-shelf-159",
+  "cat": "crockery-shelves",
+  "model": "159",
+  "code": "CRS 159",
+  "sku": "WM-CRS-159-1-1",
+  "price": 59280,
+  "regular_price": null,
+  "size": "48\" x 16\" x 78\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/crockery-shelf-159-1.webp",
+    "sm": "/img/p/crockery-shelf-159-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/crockery-shelf-159-2.webp",
+    "sm": "/img/p/crockery-shelf-159-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 492
+ },
+ {
+  "slug": "crockery-shelf-181",
+  "cat": "crockery-shelves",
+  "model": "181",
+  "code": "CRS 181",
+  "sku": "WM-CRS-181-1-1-1",
+  "price": 55200,
+  "regular_price": null,
+  "size": "42\" x 16\" x 78\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/crockery-shelf-181-1.webp",
+    "sm": "/img/p/crockery-shelf-181-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/crockery-shelf-181-2.webp",
+    "sm": "/img/p/crockery-shelf-181-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 506
+ },
+ {
+  "slug": "crockery-shelf-174",
+  "cat": "crockery-shelves",
+  "model": "174",
+  "code": "CRS 174",
+  "sku": "WM-CRS-174-1-1-1-1",
+  "price": 44520,
+  "regular_price": null,
+  "size": "36\" x 16\" x 78\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/crockery-shelf-174-1.webp",
+    "sm": "/img/p/crockery-shelf-174-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/crockery-shelf-174-2.webp",
+    "sm": "/img/p/crockery-shelf-174-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 508
+ },
+ {
+  "slug": "crockery-shelf-158",
+  "cat": "crockery-shelves",
+  "model": "158",
+  "code": "CRS 158",
+  "sku": "WM-CRS-158-1-1-1-1-1",
+  "price": 37080,
+  "regular_price": null,
+  "size": "27\" x 16\" x 78\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/crockery-shelf-158-1.webp",
+    "sm": "/img/p/crockery-shelf-158-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/crockery-shelf-158-2.webp",
+    "sm": "/img/p/crockery-shelf-158-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 513
+ },
+ {
+  "slug": "crockery-shelf-157",
+  "cat": "crockery-shelves",
+  "model": "157",
+  "code": "CRS 157",
+  "sku": "WM-CRS-157-1-1-1-1-1-1",
+  "price": 27960,
+  "regular_price": null,
+  "size": "42\" x 16\" x 42\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/crockery-shelf-157-1.webp",
+    "sm": "/img/p/crockery-shelf-157-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/crockery-shelf-157-2.webp",
+    "sm": "/img/p/crockery-shelf-157-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 518
+ },
+ {
+  "slug": "crockery-shelf-161",
+  "cat": "crockery-shelves",
+  "model": "161",
+  "code": "CRS 161",
+  "sku": "WM-CRS-161-1-1-1-1-1-1-1",
+  "price": 88920,
+  "regular_price": null,
+  "size": "72\" x 16\" x 78\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/crockery-shelf-161-1.webp",
+    "sm": "/img/p/crockery-shelf-161-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/crockery-shelf-161-2.webp",
+    "sm": "/img/p/crockery-shelf-161-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 543
+ },
+ {
+  "slug": "crockery-shelf-162",
+  "cat": "crockery-shelves",
+  "model": "162",
+  "code": "CRS 162",
+  "sku": "WM-CRS-162-1-1-1-1-1-1-1-1",
+  "price": 66720,
+  "regular_price": null,
+  "size": "54\" x 16\" (14\") x 78\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/crockery-shelf-162-1.webp",
+    "sm": "/img/p/crockery-shelf-162-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/crockery-shelf-162-2.webp",
+    "sm": "/img/p/crockery-shelf-162-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 588
+ },
+ {
+  "slug": "crockery-shelf-164",
+  "cat": "crockery-shelves",
+  "model": "164",
+  "code": "CRS 164",
+  "sku": "WM-CRS-163-1-1-1-1-1-1-1-1-1",
+  "price": 74160,
+  "regular_price": null,
+  "size": "60\" x 16\" (12\") x 78\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/crockery-shelf-164-1.webp",
+    "sm": "/img/p/crockery-shelf-164-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/crockery-shelf-164-2.webp",
+    "sm": "/img/p/crockery-shelf-164-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 592
+ },
+ {
+  "slug": "crockery-shelf-163",
+  "cat": "crockery-shelves",
+  "model": "163",
+  "code": "CRS 163",
+  "sku": "WM-CRS-163-1-1-1-1-1-1-1-1-1-1",
+  "price": 74160,
+  "regular_price": null,
+  "size": "60\" x 16\" (14\") x 78\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/crockery-shelf-163-1.webp",
+    "sm": "/img/p/crockery-shelf-163-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/crockery-shelf-163-2.webp",
+    "sm": "/img/p/crockery-shelf-163-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 594
+ },
+ {
+  "slug": "crockery-shelf-165",
+  "cat": "crockery-shelves",
+  "model": "165",
+  "code": "CRS 165",
+  "sku": "WM-CRS-165-1-1-1",
+  "price": 66720,
+  "regular_price": null,
+  "size": "54\" x 16\" (14\") x 78\" (82)",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/crockery-shelf-165-1.webp",
+    "sm": "/img/p/crockery-shelf-165-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/crockery-shelf-165-2.webp",
+    "sm": "/img/p/crockery-shelf-165-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 595
+ },
+ {
+  "slug": "crockery-shelf-167",
+  "cat": "crockery-shelves",
+  "model": "167",
+  "code": "CRS 167",
+  "sku": "WM-CRS-167-1-1-1-1",
+  "price": 59280,
+  "regular_price": null,
+  "size": "48\" x 16\" x 78\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/crockery-shelf-167-1.webp",
+    "sm": "/img/p/crockery-shelf-167-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/crockery-shelf-167-2.webp",
+    "sm": "/img/p/crockery-shelf-167-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 596
+ },
+ {
+  "slug": "crockery-shelf-169",
+  "cat": "crockery-shelves",
+  "model": "169",
+  "code": "CRS 169",
+  "sku": "WM-CRS-169-1-1-1-1-1",
+  "price": 59280,
+  "regular_price": null,
+  "size": "48\" x 16\" x 78\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/crockery-shelf-169-1.webp",
+    "sm": "/img/p/crockery-shelf-169-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/crockery-shelf-169-2.webp",
+    "sm": "/img/p/crockery-shelf-169-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 597
+ },
+ {
+  "slug": "dressing-table-715",
+  "cat": "dressing-tables",
+  "model": "715",
+  "code": "DRT 715",
+  "sku": "WM-DRT-715-1-1",
+  "price": 23400,
+  "regular_price": null,
+  "size": "L 30\" x W 16\" x H 72\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/dressing-table-715-1.webp",
+    "sm": "/img/p/dressing-table-715-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/dressing-table-715-2.webp",
+    "sm": "/img/p/dressing-table-715-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 598
+ },
+ {
+  "slug": "dressing-table-718",
+  "cat": "dressing-tables",
+  "model": "718",
+  "code": "DRT 718",
+  "sku": "WM-DRT-718-1-1-1",
+  "price": 33120,
+  "regular_price": null,
+  "size": "L 42\" x W 18\" x H 72\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/dressing-table-718-1.webp",
+    "sm": "/img/p/dressing-table-718-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/dressing-table-718-2.webp",
+    "sm": "/img/p/dressing-table-718-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 611
+ },
+ {
+  "slug": "dressing-table-719",
+  "cat": "dressing-tables",
+  "model": "719",
+  "code": "DRT 719",
+  "sku": "WM-DRT-719-1-1-1-1",
+  "price": 37320,
+  "regular_price": null,
+  "size": "L 42\" x W 16\" x H 72\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/dressing-table-719-1.webp",
+    "sm": "/img/p/dressing-table-719-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/dressing-table-719-2.webp",
+    "sm": "/img/p/dressing-table-719-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 612
+ },
+ {
+  "slug": "dressing-table-720",
+  "cat": "dressing-tables",
+  "model": "720",
+  "code": "DRT 720",
+  "sku": "WM-DRT-720-1-1",
+  "price": 28560,
+  "regular_price": null,
+  "size": "L 42\" x W 16\" x H 72\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/dressing-table-720-1.webp",
+    "sm": "/img/p/dressing-table-720-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/dressing-table-720-2.webp",
+    "sm": "/img/p/dressing-table-720-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 613
+ },
+ {
+  "slug": "dressing-table-724",
+  "cat": "dressing-tables",
+  "model": "724",
+  "code": "DRT 724",
+  "sku": "WM-DRT-724-1-1-1-1",
+  "price": 19200,
+  "regular_price": null,
+  "size": "L 24\" x W 16\" x H 72\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/dressing-table-724-1.webp",
+    "sm": "/img/p/dressing-table-724-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/dressing-table-724-2.webp",
+    "sm": "/img/p/dressing-table-724-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 614
+ },
+ {
+  "slug": "dressing-table-725",
+  "cat": "dressing-tables",
+  "model": "725",
+  "code": "DRT 725",
+  "sku": "WM-DRT-725-1-1-1-1-1",
+  "price": 12240,
+  "regular_price": null,
+  "size": "L 21\" x W 16\" x H 72\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/dressing-table-725-1.webp",
+    "sm": "/img/p/dressing-table-725-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/dressing-table-725-2.webp",
+    "sm": "/img/p/dressing-table-725-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 615
+ },
+ {
+  "slug": "dressing-table-727",
+  "cat": "dressing-tables",
+  "model": "727",
+  "code": "DRT 727",
+  "sku": "WM-DRT-727-1-1-1-1-1-1",
+  "price": 17640,
+  "regular_price": null,
+  "size": "L 21\" x W 16\" x H 74\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/dressing-table-727-1.webp",
+    "sm": "/img/p/dressing-table-727-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/dressing-table-727-2.webp",
+    "sm": "/img/p/dressing-table-727-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 616
+ },
+ {
+  "slug": "dressing-table-729",
+  "cat": "dressing-tables",
+  "model": "729",
+  "code": "DRT 729",
+  "sku": "WM-DRT-729-1-1-1-1-1-1-1",
+  "price": 11400,
+  "regular_price": null,
+  "size": "L 36\" x W 6\" x H 22\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/dressing-table-729-1.webp",
+    "sm": "/img/p/dressing-table-729-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/dressing-table-729-2.webp",
+    "sm": "/img/p/dressing-table-729-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 617
+ },
+ {
+  "slug": "dressing-table-737",
+  "cat": "dressing-tables",
+  "model": "737",
+  "code": "DRT 737",
+  "sku": "WM-DRT-737-1-1-1-1-1-1-1-1",
+  "price": 21000,
+  "regular_price": null,
+  "size": "L 24\" x W 16\" x H 72\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/dressing-table-737-1.webp",
+    "sm": "/img/p/dressing-table-737-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/dressing-table-737-2.webp",
+    "sm": "/img/p/dressing-table-737-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 618
+ },
+ {
+  "slug": "dressing-table-738",
+  "cat": "dressing-tables",
+  "model": "738",
+  "code": "DRT 738",
+  "sku": "WM-DRT-738-1-1-1",
+  "price": 28200,
+  "regular_price": null,
+  "size": "L 24\" x W 16\" x H 73\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/dressing-table-738-1.webp",
+    "sm": "/img/p/dressing-table-738-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/dressing-table-738-2.webp",
+    "sm": "/img/p/dressing-table-738-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 619
+ },
+ {
+  "slug": "dressing-table-739",
+  "cat": "dressing-tables",
+  "model": "739",
+  "code": "DRT 739",
+  "sku": "WM-DRT-739-1-1-1-1",
+  "price": 32160,
+  "regular_price": null,
+  "size": "L 24\" x W 14\" x H 73\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/dressing-table-739-1.webp",
+    "sm": "/img/p/dressing-table-739-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/dressing-table-739-2.webp",
+    "sm": "/img/p/dressing-table-739-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 620
+ },
+ {
+  "slug": "dressing-table-742",
+  "cat": "dressing-tables",
+  "model": "742",
+  "code": "DRT 742",
+  "sku": "WM-DRT-742-1-1-1-1-2",
+  "price": 54000,
+  "regular_price": null,
+  "size": "L 48\" x W 16\" (12\") x H 78\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/dressing-table-742-1.webp",
+    "sm": "/img/p/dressing-table-742-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/dressing-table-742-2.webp",
+    "sm": "/img/p/dressing-table-742-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 622
+ },
+ {
+  "slug": "divan-631",
+  "cat": "divans",
+  "model": "631",
+  "code": "DE 631",
+  "sku": "WM-DE-631-1-1-1-1-2-1",
+  "price": 39600,
+  "regular_price": null,
+  "size": "L 84\" x W 27\" x H 14\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/divan-631-1.webp",
+    "sm": "/img/p/divan-631-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/divan-631-2.webp",
+    "sm": "/img/p/divan-631-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 624
+ },
+ {
+  "slug": "divan-632",
+  "cat": "divans",
+  "model": "632",
+  "code": "DE 632",
+  "sku": "WM-DE-632-1-1-1-1-2-1-1",
+  "price": 39600,
+  "regular_price": null,
+  "size": "L 84\" x W 27\" x H 14\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/divan-632-1.webp",
+    "sm": "/img/p/divan-632-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/divan-632-2.webp",
+    "sm": "/img/p/divan-632-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 635
+ },
+ {
+  "slug": "divan-633",
+  "cat": "divans",
+  "model": "633",
+  "code": "DE 633",
+  "sku": "WM-DE-633-1-1-1-1-2-1-1-1",
+  "price": 32280,
+  "regular_price": null,
+  "size": "L 84\" x W 27\" x H 14\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/divan-633-1.webp",
+    "sm": "/img/p/divan-633-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/divan-633-2.webp",
+    "sm": "/img/p/divan-633-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 636
+ },
+ {
+  "slug": "divan-634",
+  "cat": "divans",
+  "model": "634",
+  "code": "DE 634",
+  "sku": "WM-DE-634-1-1-1-1-2-1-1-1-1",
+  "price": 34080,
+  "regular_price": null,
+  "size": "L 84\" x W 27\" x H 14\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/divan-634-1.webp",
+    "sm": "/img/p/divan-634-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/divan-634-2.webp",
+    "sm": "/img/p/divan-634-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 637
+ },
+ {
+  "slug": "divan-636",
+  "cat": "divans",
+  "model": "636",
+  "code": "DE 636",
+  "sku": "WM-DE-636-1-1-1-1-2-1-1-1-1-1",
+  "price": 34920,
+  "regular_price": null,
+  "size": "L 84\" x W 27\" x H 14\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/divan-636-1.webp",
+    "sm": "/img/p/divan-636-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/divan-636-2.webp",
+    "sm": "/img/p/divan-636-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 638
+ },
+ {
+  "slug": "divan-637",
+  "cat": "divans",
+  "model": "637",
+  "code": "DE 637",
+  "sku": "WM-DE-637-1-1-1-1",
+  "price": 42720,
+  "regular_price": null,
+  "size": "L 90\" x W 27\" x H 15\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/divan-637-1.webp",
+    "sm": "/img/p/divan-637-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/divan-637-2.webp",
+    "sm": "/img/p/divan-637-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 639
+ },
+ {
+  "slug": "divan-638",
+  "cat": "divans",
+  "model": "638",
+  "code": "DE 638",
+  "sku": "WM-DE-638-1-1-1-1-1",
+  "price": 34920,
+  "regular_price": null,
+  "size": "L 90\" x W 27\" x H 15\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/divan-638-1.webp",
+    "sm": "/img/p/divan-638-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/divan-638-2.webp",
+    "sm": "/img/p/divan-638-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 649
+ },
+ {
+  "slug": "divan-643",
+  "cat": "divans",
+  "model": "643",
+  "code": "DE 643",
+  "sku": "WM-DE-643-1-1-1-1-1-1",
+  "price": 34920,
+  "regular_price": null,
+  "size": "L 84\" x W 27\" x H 14\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/divan-643-1.webp",
+    "sm": "/img/p/divan-643-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/divan-643-2.webp",
+    "sm": "/img/p/divan-643-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 650
+ },
+ {
+  "slug": "divan-646",
+  "cat": "divans",
+  "model": "646",
+  "code": "DE 646",
+  "sku": "WM-DE-646-1-1-1-1-1-1-1",
+  "price": 33240,
+  "regular_price": null,
+  "size": "L 75\" x W 27\" x H 16\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/divan-646-1.webp",
+    "sm": "/img/p/divan-646-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/divan-646-2.webp",
+    "sm": "/img/p/divan-646-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 651
+ },
+ {
+  "slug": "divan-de-11-cfs-23",
+  "cat": "divans",
+  "model": "DE/11/CFS/23",
+  "code": "DE/11/CFS/23",
+  "sku": "WM-DE/11/CFS/23-1-1-1-1-1-1-1-1",
+  "price": 38400,
+  "regular_price": null,
+  "size": "L 78\" x W 22\" x H 16\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/divan-de-11-cfs-23-1.webp",
+    "sm": "/img/p/divan-de-11-cfs-23-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/divan-de-11-cfs-23-2.webp",
+    "sm": "/img/p/divan-de-11-cfs-23-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 652
+ },
+ {
+  "slug": "wardrobe-214",
+  "cat": "wardrobes",
+  "model": "214",
+  "code": "WD 214",
+  "sku": "WM-WD-214-1-1-1-1-1-1",
+  "price": 36000,
+  "regular_price": null,
+  "size": "L 36\" x W 20\" x H 48\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/wardrobe-214-1.webp",
+    "sm": "/img/p/wardrobe-214-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/wardrobe-214-2.webp",
+    "sm": "/img/p/wardrobe-214-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 654
+ },
+ {
+  "slug": "wardrobe-215",
+  "cat": "wardrobes",
+  "model": "215",
+  "code": "WD 215",
+  "sku": "WM-WD-215-1-1-1-1-1-1-1",
+  "price": 40560,
+  "regular_price": null,
+  "size": "L 36\" x W 20\" x H 48\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/wardrobe-215-1.webp",
+    "sm": "/img/p/wardrobe-215-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/wardrobe-215-2.webp",
+    "sm": "/img/p/wardrobe-215-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 664
+ },
+ {
+  "slug": "wardrobe-216",
+  "cat": "wardrobes",
+  "model": "216",
+  "code": "WD 216",
+  "sku": "WM-WD-216-1-1-1-1-1-1-1-1",
+  "price": 40560,
+  "regular_price": null,
+  "size": "L 36\" x W 20\" x H 48\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/wardrobe-216-1.webp",
+    "sm": "/img/p/wardrobe-216-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/wardrobe-216-2.webp",
+    "sm": "/img/p/wardrobe-216-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 688
+ },
+ {
+  "slug": "wardrobe-219",
+  "cat": "wardrobes",
+  "model": "219",
+  "code": "WD 219",
+  "sku": "WM-WD-219-1-1-1-1-1-1-1-1-1",
+  "price": 40560,
+  "regular_price": null,
+  "size": "L 36\" x W 20\" x H 48\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/wardrobe-219-1.webp",
+    "sm": "/img/p/wardrobe-219-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/wardrobe-219-2.webp",
+    "sm": "/img/p/wardrobe-219-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 689
+ },
+ {
+  "slug": "wardrobe-222",
+  "cat": "wardrobes",
+  "model": "222",
+  "code": "WD 222",
+  "sku": "WM-WD-222-1-1-1-1-1-1-1-1-1-1",
+  "price": 56280,
+  "regular_price": null,
+  "size": "L 36\" x W 20\" x H 48\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/wardrobe-222-1.webp",
+    "sm": "/img/p/wardrobe-222-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/wardrobe-222-2.webp",
+    "sm": "/img/p/wardrobe-222-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 691
+ },
+ {
+  "slug": "wardrobe-223",
+  "cat": "wardrobes",
+  "model": "223",
+  "code": "WD 223",
+  "sku": "WM-WD-223-1-1-1-1-1-1-1-1-1-1-1",
+  "price": 40560,
+  "regular_price": null,
+  "size": "L 36\" x W 20\" x H 48\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/wardrobe-223-1.webp",
+    "sm": "/img/p/wardrobe-223-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/wardrobe-223-2.webp",
+    "sm": "/img/p/wardrobe-223-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 693
+ },
+ {
+  "slug": "wardrobe-230",
+  "cat": "wardrobes",
+  "model": "230",
+  "code": "WD 230",
+  "sku": "WM-WD-230-1-1-1-1-1-1-1-1-1-1-1-1",
+  "price": 40560,
+  "regular_price": null,
+  "size": "L 36\" x W 20\" x H 48\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/wardrobe-230-1.webp",
+    "sm": "/img/p/wardrobe-230-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/wardrobe-230-2.webp",
+    "sm": "/img/p/wardrobe-230-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 694
+ },
+ {
+  "slug": "wardrobe-232",
+  "cat": "wardrobes",
+  "model": "232",
+  "code": "WD 232",
+  "sku": "WM-WD-232-1-1-1-1-1-1-1-1-1-1-1-1-1",
+  "price": 40560,
+  "regular_price": null,
+  "size": "L 36\" x W 20\" x H 48\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/wardrobe-232-1.webp",
+    "sm": "/img/p/wardrobe-232-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/wardrobe-232-2.webp",
+    "sm": "/img/p/wardrobe-232-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 695
+ },
+ {
+  "slug": "tv-shelf-811",
+  "cat": "tv-shelves",
+  "model": "811",
+  "code": "TVS 811",
+  "sku": "TVS-811-1-1-1-1-1-1-1-1-1-1-1-1-1-1",
+  "price": 29880,
+  "regular_price": null,
+  "size": "L 60\" x W 16\" x H 27\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/tv-shelf-811-1.webp",
+    "sm": "/img/p/tv-shelf-811-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/tv-shelf-811-2.webp",
+    "sm": "/img/p/tv-shelf-811-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 697
+ },
+ {
+  "slug": "tv-shelf-803",
+  "cat": "tv-shelves",
+  "model": "803",
+  "code": "TVS 803",
+  "sku": "TVS-803-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1",
+  "price": 28800,
+  "regular_price": null,
+  "size": "L 48\" x W 12\" x H 63\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/tv-shelf-803-1.webp",
+    "sm": "/img/p/tv-shelf-803-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/tv-shelf-803-2.webp",
+    "sm": "/img/p/tv-shelf-803-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 714
+ },
+ {
+  "slug": "tv-shelf-821",
+  "cat": "tv-shelves",
+  "model": "821",
+  "code": "TVS 821",
+  "sku": "TVS-821-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1",
+  "price": 36000,
+  "regular_price": null,
+  "size": "L 48\" x W 12\" x H 60\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/tv-shelf-821-1.webp",
+    "sm": "/img/p/tv-shelf-821-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/tv-shelf-821-2.webp",
+    "sm": "/img/p/tv-shelf-821-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 715
+ },
+ {
+  "slug": "tv-shelf-816",
+  "cat": "tv-shelves",
+  "model": "816",
+  "code": "TVS 816",
+  "sku": "TVS-816-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1",
+  "price": 26160,
+  "regular_price": null,
+  "size": "L 48\" x W 11\" x H 60\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/tv-shelf-816-1.webp",
+    "sm": "/img/p/tv-shelf-816-1-sm.webp",
+    "w": 1000,
+    "h": 562
+   },
+   {
+    "src": "/img/p/tv-shelf-816-2.webp",
+    "sm": "/img/p/tv-shelf-816-2-sm.webp",
+    "w": 1000,
+    "h": 562
+   }
+  ],
+  "old_id": 718
+ },
+ {
+  "slug": "tv-shelf-805",
+  "cat": "tv-shelves",
+  "model": "805",
+  "code": "TVS 805",
+  "sku": "TVS-805-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1",
+  "price": 29880,
+  "regular_price": null,
+  "size": "L 48\" x W 16\" x H 30\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/tv-shelf-805-1.webp",
+    "sm": "/img/p/tv-shelf-805-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/tv-shelf-805-2.webp",
+    "sm": "/img/p/tv-shelf-805-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 719
+ },
+ {
+  "slug": "shoe-rack-910",
+  "cat": "shoe-racks",
+  "model": "910",
+  "code": "SR 910",
+  "sku": "WM-SR-910-1-1",
+  "price": 24000,
+  "regular_price": null,
+  "size": "L 30\" x W 14\" x H 42\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/shoe-rack-910-1.webp",
+    "sm": "/img/p/shoe-rack-910-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/shoe-rack-910-2.webp",
+    "sm": "/img/p/shoe-rack-910-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 720
+ },
+ {
+  "slug": "shoe-rack-911",
+  "cat": "shoe-racks",
+  "model": "911",
+  "code": "SR 911",
+  "sku": "WM-SR-911-1-1-1",
+  "price": 39360,
+  "regular_price": null,
+  "size": "L 27\" x W 14\" x H 42\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/shoe-rack-911-1.webp",
+    "sm": "/img/p/shoe-rack-911-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/shoe-rack-911-2.webp",
+    "sm": "/img/p/shoe-rack-911-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 728
+ },
+ {
+  "slug": "shoe-rack-912",
+  "cat": "shoe-racks",
+  "model": "912",
+  "code": "SR 912",
+  "sku": "WM-SR-912-1-1-1-1",
+  "price": 34080,
+  "regular_price": null,
+  "size": "L 36\" x W 14\" x H 54\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/shoe-rack-912-1.webp",
+    "sm": "/img/p/shoe-rack-912-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/shoe-rack-912-2.webp",
+    "sm": "/img/p/shoe-rack-912-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 729
+ },
+ {
+  "slug": "shoe-rack-913",
+  "cat": "shoe-racks",
+  "model": "913",
+  "code": "SR 913",
+  "sku": "WM-SR-912-1-1-1-1-1",
+  "price": 42720,
+  "regular_price": null,
+  "size": "L-24’’, W-14’’, H-60’’",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/shoe-rack-913-1.webp",
+    "sm": "/img/p/shoe-rack-913-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/shoe-rack-913-2.webp",
+    "sm": "/img/p/shoe-rack-913-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 730
+ },
+ {
+  "slug": "shoe-rack-914",
+  "cat": "shoe-racks",
+  "model": "914",
+  "code": "SR 914",
+  "sku": "WM-SR-914-1-1-1-1-1-1",
+  "price": 36360,
+  "regular_price": null,
+  "size": "L-30’’, W-14’’, H-36’’",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/shoe-rack-914-1.webp",
+    "sm": "/img/p/shoe-rack-914-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/shoe-rack-914-2.webp",
+    "sm": "/img/p/shoe-rack-914-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 731
+ },
+ {
+  "slug": "almirah-01-cfs-23",
+  "cat": "almirahs",
+  "model": "01/CFS/23",
+  "code": "ALM 01/CFS/23",
+  "sku": "WM-ALM 01/CFS/23-1-1",
+  "price": 57600,
+  "regular_price": null,
+  "size": "L-36\" x W-20\" x H-78\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/almirah-01-cfs-23-1.webp",
+    "sm": "/img/p/almirah-01-cfs-23-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/almirah-01-cfs-23-2.webp",
+    "sm": "/img/p/almirah-01-cfs-23-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 756
+ },
+ {
+  "slug": "almirah-02-cfs-23",
+  "cat": "almirahs",
+  "model": "02/CFS/23",
+  "code": "ALM 02/CFS/23",
+  "sku": "WM-ALM 02/CFS/23-1-1-1",
+  "price": 115200,
+  "regular_price": null,
+  "size": "L-36\" x W-20\" x H-78\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/almirah-02-cfs-23-1.webp",
+    "sm": "/img/p/almirah-02-cfs-23-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/almirah-02-cfs-23-2.webp",
+    "sm": "/img/p/almirah-02-cfs-23-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/almirah-02-cfs-23-3.webp",
+    "sm": "/img/p/almirah-02-cfs-23-3-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 761
+ },
+ {
+  "slug": "corner-shelf-14",
+  "cat": "corner-shelves",
+  "model": "14",
+  "code": "CS 14",
+  "sku": "WM-CS-14-1-1-1-1",
+  "price": 14400,
+  "regular_price": null,
+  "size": "L-36\" x W-11\" x H-72\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/corner-shelf-14-1.webp",
+    "sm": "/img/p/corner-shelf-14-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/corner-shelf-14-2.webp",
+    "sm": "/img/p/corner-shelf-14-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 763
+ },
+ {
+  "slug": "corner-shelf-16",
+  "cat": "corner-shelves",
+  "model": "16",
+  "code": "CS 16",
+  "sku": "WM-CS-16-1-1-1-1-1",
+  "price": 18000,
+  "regular_price": null,
+  "size": "L-36\" x W-11\" x H-72\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/corner-shelf-16-1.webp",
+    "sm": "/img/p/corner-shelf-16-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/corner-shelf-16-2.webp",
+    "sm": "/img/p/corner-shelf-16-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 770
+ },
+ {
+  "slug": "corner-shelf-21",
+  "cat": "corner-shelves",
+  "model": "21",
+  "code": "CS 21",
+  "sku": "WM-CS-21-1-1-1-1-1-1",
+  "price": 11400,
+  "regular_price": null,
+  "size": "L-16\" x W-15\" x H-72\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/corner-shelf-21-1.webp",
+    "sm": "/img/p/corner-shelf-21-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/corner-shelf-21-2.webp",
+    "sm": "/img/p/corner-shelf-21-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 771
+ },
+ {
+  "slug": "corner-shelf-22",
+  "cat": "corner-shelves",
+  "model": "22",
+  "code": "CS 22",
+  "sku": "WM-CS-22-1-1-1-1-1-1-1",
+  "price": 11040,
+  "regular_price": null,
+  "size": "L-12\" x W-16\" x H-71\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/corner-shelf-22-1.webp",
+    "sm": "/img/p/corner-shelf-22-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/corner-shelf-22-2.webp",
+    "sm": "/img/p/corner-shelf-22-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 772
+ },
+ {
+  "slug": "corner-shelf-23",
+  "cat": "corner-shelves",
+  "model": "23",
+  "code": "CS 23",
+  "sku": "WM-CS-23-1-1-1-1-1-1-1-1",
+  "price": 18000,
+  "regular_price": null,
+  "size": "L-18\" x W-11\" x H-72\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/corner-shelf-23-1.webp",
+    "sm": "/img/p/corner-shelf-23-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/corner-shelf-23-2.webp",
+    "sm": "/img/p/corner-shelf-23-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 773
+ },
+ {
+  "slug": "corner-shelf-24",
+  "cat": "corner-shelves",
+  "model": "24",
+  "code": "CS 24",
+  "sku": "WM-CS-23-1-1-1-1-1-1-1-1-1",
+  "price": 18000,
+  "regular_price": null,
+  "size": "L-48\" x W-12\" x H-45\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/corner-shelf-24-1.webp",
+    "sm": "/img/p/corner-shelf-24-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/corner-shelf-24-2.webp",
+    "sm": "/img/p/corner-shelf-24-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 774
+ },
+ {
+  "slug": "almirah-366",
+  "cat": "almirahs",
+  "model": "366",
+  "code": "ALM 366",
+  "sku": "WM-ALM 366",
+  "price": 60840,
+  "regular_price": null,
+  "size": "L-36\" x W-20\" x H-78\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/almirah-366-1.webp",
+    "sm": "/img/p/almirah-366-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/almirah-366-2.webp",
+    "sm": "/img/p/almirah-366-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 779
+ },
+ {
+  "slug": "almirah-367",
+  "cat": "almirahs",
+  "model": "367",
+  "code": "ALM 367",
+  "sku": "WM-ALM 366-1",
+  "price": 68280,
+  "regular_price": null,
+  "size": "L-42\" x W-20\" x H-78\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/almirah-367-1.webp",
+    "sm": "/img/p/almirah-367-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/almirah-367-2.webp",
+    "sm": "/img/p/almirah-367-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 792
+ },
+ {
+  "slug": "wardrobe-233",
+  "cat": "wardrobes",
+  "model": "233",
+  "code": "WD 233",
+  "sku": "WM-WD-233-1",
+  "price": 51000,
+  "regular_price": null,
+  "size": "L 78\" x W 20\" x H 48\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/wardrobe-233-1.webp",
+    "sm": "/img/p/wardrobe-233-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/wardrobe-233-2.webp",
+    "sm": "/img/p/wardrobe-233-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 796
+ },
+ {
+  "slug": "wardrobe-235",
+  "cat": "wardrobes",
+  "model": "235",
+  "code": "WD 235",
+  "sku": "WM-WD-235-1-1",
+  "price": 43200,
+  "regular_price": null,
+  "size": "L 36\" x W 20\" x H 48\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/wardrobe-235-1.webp",
+    "sm": "/img/p/wardrobe-235-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/wardrobe-235-2.webp",
+    "sm": "/img/p/wardrobe-235-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 842
+ },
+ {
+  "slug": "wardrobe-236",
+  "cat": "wardrobes",
+  "model": "236",
+  "code": "WD 236",
+  "sku": "WM-WD-236-1-1-1",
+  "price": 62400,
+  "regular_price": null,
+  "size": "L 60\" x W 20\" x H 48\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/wardrobe-236-1.webp",
+    "sm": "/img/p/wardrobe-236-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/wardrobe-236-2.webp",
+    "sm": "/img/p/wardrobe-236-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 843
+ },
+ {
+  "slug": "bookshelf-1039",
+  "cat": "bookshelves",
+  "model": "1039",
+  "code": "BS-1039",
+  "sku": "WM-BS-1039-1-1-1",
+  "price": 42120,
+  "regular_price": null,
+  "size": "L-36\" x W-12\" x H-78\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/bookshelf-1039-1.webp",
+    "sm": "/img/p/bookshelf-1039-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/bookshelf-1039-2.webp",
+    "sm": "/img/p/bookshelf-1039-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 844
+ },
+ {
+  "slug": "sofa-cum-bed-651",
+  "cat": "sofa-cum-beds",
+  "model": "651",
+  "code": "SCB 651",
+  "sku": "WM-SCB-657-1-1-3",
+  "price": 54000,
+  "regular_price": null,
+  "size": "L-78\" x W-41\" x H-16\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/sofa-cum-bed-651-1.webp",
+    "sm": "/img/p/sofa-cum-bed-651-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/sofa-cum-bed-651-2.webp",
+    "sm": "/img/p/sofa-cum-bed-651-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/sofa-cum-bed-651-3.webp",
+    "sm": "/img/p/sofa-cum-bed-651-3-sm.webp",
+    "w": 1000,
+    "h": 1000
+   }
+  ],
+  "old_id": 859
+ },
+ {
+  "slug": "bed-512",
+  "cat": "beds",
+  "model": "512",
+  "code": "BD-512",
+  "sku": "WM-Bed-514",
+  "price": 50760,
+  "regular_price": null,
+  "size": "L-78\" x W-60\"",
+  "wood": "Pine",
+  "polishes": [
+   "Light Brown",
+   "Walnut",
+   "Ash"
+  ],
+  "images": [
+   {
+    "src": "/img/p/bed-512-1.webp",
+    "sm": "/img/p/bed-512-1-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/bed-512-2.webp",
+    "sm": "/img/p/bed-512-2-sm.webp",
+    "w": 1000,
+    "h": 667
+   }
+  ],
+  "old_id": 863
+ }
+]

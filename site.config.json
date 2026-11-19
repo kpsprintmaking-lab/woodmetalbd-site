@@ -1,0 +1,17 @@
+{
+  "siteUrl": "https://www.woodmetalbd.com",
+  "whatsapp": "8801303389821",
+  "whatsappNote": "TESTING: Vaab's number. Change to 8801970802121 before launch.",
+  "phones": [
+    { "tel": "+8801844630465", "label": "01844 630 465" },
+    { "tel": "+8801970802121", "label": "01970 802121" }
+  ],
+  "email": "woodmetalbd@gmail.com",
+  "social": {
+    "facebook": "https://facebook.com/bdwoodmetal",
+    "instagram": "https://instagram.com/woodmetalbd",
+    "youtube": "https://youtube.com/@woodmetal157"
+  },
+  "featured": ["sofa-580", "bed-512", "dining-set-60", "almirah-338", "dressing-table-742", "bookshelf-1039", "sofa-cum-bed-653", "tv-shelf-821"],
+  "heroProduct": "sofa-580"
+}

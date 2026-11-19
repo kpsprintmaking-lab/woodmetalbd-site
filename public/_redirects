@@ -1,0 +1,12 @@
+# Old WordPress / WooCommerce addresses -> new pages
+/shop            /furniture/        301
+/shop/*          /furniture/        301
+/product/*       /furniture/        301
+/product-category/* /furniture/     301
+/cart*           /furniture/        301
+/checkout*       /furniture/        301
+/my-account*     /contact/          301
+/about-us*       /about/            301
+/contact-us*     /contact/          301
+/wp-admin*       /                  302
+/admin           /admin/            301

@@ -1,0 +1,9 @@
+# Cloudflare Pages project config (used by Pages builds and `wrangler pages dev`).
+name = "woodmetalbd"
+pages_build_output_dir = "./dist"
+compatibility_date = "2026-11-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "woodmetal-leads"
+database_id = "9a27f6b1-ace0-4917-bdc8-acaebac31197"
