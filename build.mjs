@@ -69,18 +69,18 @@ ${noindex ? '<meta name="robots" content="noindex">' : ''}
 <meta property="og:description" content="${esc(description || t.desc)}">
 <meta property="og:image" content="${ogImg}">
 <meta property="og:url" content="${canonical}">
-<meta name="theme-color" content="#3B2A1E">
+<meta name="theme-color" content="#111111">
 <link rel="icon" href="/favicon-48.png" type="image/png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Noto+Serif+Bengali:wght@600;700&family=Hind+Siliguri:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Hind+Siliguri:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="/css/site.css?v=${ASSET_V}">
 ${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld)}</script>` : ''}
 </head>
-<body class="paper lang-${lang}">
+<body class="lang-${lang}">
 <a class="skip" href="#main">${t.skip}</a>
-<div class="topstrip grain-dark">
+<div class="topstrip dark">
   <div class="wrap row-between">
     <span>${t.since}</span>
     <span class="topstrip-r"><a href="tel:${cfg.phones[0].tel}">${num(lang, cfg.phones[0].label)}</a><span class="hide-sm">${t.showroomShort}</span></span>
@@ -89,8 +89,8 @@ ${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld)}</script
 <header class="site-header">
   <div class="wrap header-row">
     <a class="brand" href="${url(lang, '/')}">
-      <img class="brand-mark" src="/img/logo-mark.png" alt="" width="64" height="36">
-      <span class="brand-text"><span class="brand-name">WOOD METAL</span><span class="brand-tag">${t.tagline}</span></span>
+      <img class="brand-logo" src="/img/logo-h.png" alt="Wood Metal" width="640" height="157">
+      <span class="brand-tag">${t.tagline}</span>
     </a>
     <nav class="main-nav" aria-label="${lang === 'bn' ? 'প্রধান মেনু' : 'Main'}">
       ${navItem('/furniture/', t.nav.shop)}
@@ -108,10 +108,10 @@ ${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld)}</script
 <main id="main">
 ${body}
 </main>
-<footer class="site-footer grain-dark">
+<footer class="site-footer dark">
   <div class="wrap footer-grid">
     <div>
-      <img class="footer-logo" src="/img/logo-light.png" alt="Wood Metal" width="120" height="142" loading="lazy">
+      <img class="footer-logo" src="/img/logo-white.png" alt="Wood Metal" width="503" height="600" loading="lazy">
       <p>${t.footerLine}</p>
       <p class="footer-addr">${t.address}</p>
     </div>
@@ -220,7 +220,7 @@ function showroomCards(lang) {
 
 function storySection(lang) {
   const t = T[lang];
-  return `<section id="story" class="story grain-dark">
+  return `<section id="story" class="story">
   <div class="wrap story-grid">
     <div class="story-card">
       <h2>${t.storyTitle}</h2>
@@ -250,7 +250,6 @@ function homePage(lang) {
   <div class="hero-text">
     <span class="badge-tilt">${t.heroBadge}</span>
     <h1>${t.heroTitle}</h1>
-    ${ICON.swirl}
     <p class="lead">${t.heroText}</p>
     <div class="btn-row">
       <a class="btn btn-wa btn-lg" href="${wa(t.waGeneral)}">${ICON.wa}<span>${t.ctaWa}</span></a>
@@ -264,7 +263,7 @@ function homePage(lang) {
     <div class="years-badge">${t.yearsBadge}</div>
   </div>
 </section>
-<section class="trust grain-dark">
+<section class="trust">
   <div class="wrap trust-grid">
     ${t.trust.map((x) => `<div class="trust-item"><strong>${x.h}</strong><span>${x.p}</span></div>`).join('')}
   </div>
@@ -276,7 +275,7 @@ function homePage(lang) {
       const first = productsIn(c.slug)[0];
       return `<a class="cat-card" href="${url(lang, `/furniture/${c.slug}/`)}"><span class="cat-img"><img src="${first.images[0].sm}" alt="" loading="lazy" width="480" height="${Math.round(480 * first.images[0].h / first.images[0].w)}"></span><span class="cat-name">${c[lang]}<small>${num(lang, productsIn(c.slug).length)}${t.designs}</small></span></a>`;
     }).join('')}
-    <a class="cat-card cat-custom grain-dark" href="${url(lang, '/custom-order/')}"><span class="cat-custom-in">${ICON.chisel}<strong>${t.customTitle}</strong><small>${t.nav.custom} →</small></span></a>
+    <a class="cat-card cat-custom" href="${url(lang, '/custom-order/')}"><span class="cat-custom-in">${ICON.chisel}<strong>${t.customTitle}</strong><small>${t.nav.custom} →</small></span></a>
   </div>
 </section>
 <section id="featured" class="wrap section">
@@ -294,7 +293,7 @@ ${storySection(lang)}
     <a class="btn btn-wa btn-lg" href="${wa(t.waCustom)}">${ICON.wa}<span>${t.ctaWaPhoto}</span></a>
   </div>
 </section>
-<section id="visit" class="visit grain">
+<section id="visit" class="visit">
   <div class="wrap">
     <h2 class="visit-title">${t.visitTitle}</h2>
     ${showroomCards(lang)}
@@ -377,7 +376,7 @@ ${breadcrumbs(lang, [['/', t.home], [`/furniture/${c.slug}/`, c[lang]], [pathnam
     <dl class="specs">${specs.map(([k, v]) => `<div><dt>${k}</dt><dd>${v}</dd></div>`).join('')}</dl>
   </div>
 </section>
-<section class="terms grain-dark">
+<section class="terms">
   <div class="wrap trust-grid">${t.terms.map((x) => `<div class="trust-item"><strong>${x.h}</strong><span>${x.p}</span></div>`).join('')}</div>
 </section>
 <section id="quote" class="wrap section form-section">
@@ -441,7 +440,7 @@ ${breadcrumbs(lang, [['/', t.home], ['/contact/', t.contactTitle]])}
     <a class="btn btn-dark btn-lg" href="tel:${cfg.phones[0].tel}">${ICON.phone}<span>${num(lang, cfg.phones[0].label)}</span></a>
   </div>
 </section>
-<section class="visit grain">
+<section class="visit">
   <div class="wrap">
     ${showroomCards(lang)}
     <div class="map"><iframe title="${lang === 'bn' ? 'শোরুমের ম্যাপ' : 'Showroom map'}" src="https://www.google.com/maps?q=${encodeURIComponent('China City Dhaka, Pragati Sarani, Baridhara, Dhaka 1229')}&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>

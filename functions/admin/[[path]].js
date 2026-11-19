@@ -32,16 +32,16 @@ async function authorised(request, env) {
 
 const page = (body) => new Response(`<!doctype html><html lang="bn"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>Leads · Wood Metal</title>
 <style>
-body{margin:0;font:15px/1.5 system-ui,sans-serif;background:#F5EDE0;color:#2B1E14}
-header{background:#3B2A1E;color:#F5EDE0;padding:14px 16px;display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between}
-header a{color:#E8B931;margin-right:12px}
+body{margin:0;background:#F6F6F4 !important;font:15px/1.5 system-ui,sans-serif;background:#FFFFFF;color:#1A1A1A}
+header{background:#111111;color:#FFFFFF;padding:14px 16px;display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between}
+header a{color:#FBC834;margin-right:12px}
 main{padding:16px;max-width:1100px;margin:0 auto}
-.lead{background:#FFF9EF;border:1.5px solid #CDB08A;border-radius:8px;padding:14px 16px;margin-bottom:14px}
-.lead.new{border-left:6px solid #E8B931}
+.lead{background:#FFFFFF;border:1.5px solid #E6E6E6;border-radius:8px;padding:14px 16px;margin-bottom:14px}
+.lead.new{border-left:6px solid #FBC834}
 .top{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:baseline}
-.top b{font-size:18px}.k{color:#6B4A30}
-.pill{background:#3B2A1E;color:#F5EDE0;border-radius:99px;padding:1px 10px;font-size:13px}
-.photos{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}.photos img{width:120px;height:120px;object-fit:cover;border-radius:6px;border:1px solid #CDB08A}
+.top b{font-size:18px}.k{color:#666666}
+.pill{background:#111111;color:#FFFFFF;border-radius:99px;padding:1px 10px;font-size:13px}
+.photos{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}.photos img{width:120px;height:120px;object-fit:cover;border-radius:6px;border:1px solid #E6E6E6}
 form{display:inline-flex;gap:6px;margin-top:8px}select,button{font:inherit;min-height:36px}
 .btn{display:inline-block;background:#1F8F55;color:#fff;padding:4px 12px;border-radius:6px;text-decoration:none}
 pre{white-space:pre-wrap;font:inherit;margin:6px 0}
