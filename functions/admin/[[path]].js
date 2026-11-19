@@ -1,5 +1,5 @@
 // /admin : password-protected list of website leads (quote / custom / contact).
-// Login: any username, password = ADMIN_PASSWORD (set as a secret in Cloudflare Pages).
+// Login: any username + the admin password (ADMIN_PASSWORD secret, or the hash in the D1 settings table).
 //   /admin/                 list (filter ?status=new|contacted|done)
 //   /admin/photo/<id>       one uploaded photo
 //   POST /admin/status      change a lead's status (form: id, status)
@@ -7,17 +7,26 @@
 const STATUSES = ['new', 'contacted', 'done'];
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
-function authorised(request, env) {
+// Password check. Uses the ADMIN_PASSWORD secret when Cloudflare provides it,
+// otherwise a salted SHA-256 hash stored in D1 (settings: admin_pw_salt, admin_pw_sha256).
+const enc = new TextEncoder();
+const hex = (buf) => [...new Uint8Array(buf)].map((b) => b.toString(16).padStart(2, '0')).join('');
+function sameBytes(a, b) {
+  if (a.length !== b.length) return false;
+  let d = 0; for (let i = 0; i < a.length; i++) d |= a[i] ^ b[i];
+  return d === 0;
+}
+async function authorised(request, env) {
   const h = request.headers.get('authorization') || '';
   if (!h.startsWith('Basic ')) return false;
-  try {
-    const pass = atob(h.slice(6)).split(':').slice(1).join(':');
-    // constant-ish time compare
-    const a = new TextEncoder().encode(pass), b = new TextEncoder().encode(env.ADMIN_PASSWORD);
-    if (a.length !== b.length) return false;
-    let d = 0; for (let i = 0; i < a.length; i++) d |= a[i] ^ b[i];
-    return d === 0;
-  } catch { return false; }
+  let pass;
+  try { pass = new TextDecoder().decode(Uint8Array.from(atob(h.slice(6)), (c) => c.charCodeAt(0))).split(':').slice(1).join(':'); } catch { return false; }
+  if (env.ADMIN_PASSWORD) return sameBytes(enc.encode(pass), enc.encode(env.ADMIN_PASSWORD));
+  const rows = (await env.DB.prepare("SELECT key, value FROM settings WHERE key IN ('admin_pw_salt', 'admin_pw_sha256')").all()).results;
+  const cfg = Object.fromEntries(rows.map((r) => [r.key, r.value]));
+  if (!cfg.admin_pw_salt || !cfg.admin_pw_sha256) return false;
+  const got = hex(await crypto.subtle.digest('SHA-256', enc.encode(cfg.admin_pw_salt + pass)));
+  return sameBytes(enc.encode(got), enc.encode(cfg.admin_pw_sha256));
 }
 
 const page = (body) => new Response(`<!doctype html><html lang="bn"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>Leads · Wood Metal</title>
@@ -38,8 +47,8 @@ pre{white-space:pre-wrap;font:inherit;margin:6px 0}
 </style></head><body>${body}</body></html>`, { headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store' } });
 
 export async function onRequest({ request, env, params }) {
-  if (!env.ADMIN_PASSWORD) return new Response('ADMIN_PASSWORD পাওয়া যায়নি। Cloudflare Pages > Settings > Variables and Secrets-এ Production-এর জন্য ADMIN_PASSWORD নামে Secret (Text নয়) দিন, তারপর নতুন deploy করুন।\nADMIN_PASSWORD not found: add it as a Secret (not Text) for Production, then redeploy.', { status: 503, headers: { 'content-type': 'text/plain; charset=utf-8' } });
-  if (!authorised(request, env)) {
+  if (!env.DB) return new Response('D1 binding DB is missing.', { status: 500 });
+  if (!(await authorised(request, env))) {
     return new Response('Login required', { status: 401, headers: { 'WWW-Authenticate': 'Basic realm="Wood Metal admin", charset="UTF-8"' } });
   }
   const parts = params.path || [];
