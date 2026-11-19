@@ -96,6 +96,13 @@ p { margin: 0 0 1em; }
 .hero-frame img { width: 100%; aspect-ratio: 4 / 3; object-fit: contain; mix-blend-mode: multiply; }
 .years-badge { position: absolute; left: -10px; bottom: -18px; background: var(--yellow); color: var(--black); padding: 14px 20px; border-radius: 14px; font-family: var(--head); font-weight: 700; font-size: 20px; line-height: 1.15; }
 
+/* real photos */
+.hero-photo { padding: 0; overflow: hidden; }
+.hero-photo img { aspect-ratio: 4 / 3; object-fit: cover; mix-blend-mode: normal; }
+.showroom-photo { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 10px; margin-bottom: 14px; }
+.photo-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; margin: 18px 0 32px; }
+.photo-grid img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 10px; }
+
 /* trust strip */
 .trust { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .terms { background: var(--soft); }

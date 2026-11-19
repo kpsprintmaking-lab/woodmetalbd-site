@@ -208,6 +208,7 @@ function showroomCards(lang) {
     </div>
   </div>
   <div class="showroom showroom-old">
+    <img class="showroom-photo" src="/img/showroom/hatirpool-front-sm.webp" alt="${lang === 'bn' ? 'হাতিরপুলের শোরুম' : 'Hatirpool showroom'}" width="640" height="480" loading="lazy">
     <span class="tag tag-muted">${t.oldShowroom}</span>
     <h3>${lang === 'bn' ? 'হাতিরপুল, ধানমন্ডি' : 'Hatirpool, Dhanmondi'}</h3>
     <p>${t.oldAddress}</p>
@@ -257,8 +258,8 @@ function homePage(lang) {
     </div>
   </div>
   <div class="hero-art">
-    <a class="hero-frame" href="${url(lang, `/p/${hero.slug}/`)}">
-      <img src="${hero.images[0].src}" alt="${esc(pName(lang, hero))}" width="${hero.images[0].w}" height="${hero.images[0].h}" fetchpriority="high">
+    <a class="hero-frame hero-photo" href="${url(lang, '/furniture/beds/')}">
+      <img src="/img/showroom/bed-showroom.webp" srcset="/img/showroom/bed-showroom-sm.webp 640w, /img/showroom/bed-showroom.webp 1400w" sizes="(max-width: 720px) 100vw, 560px" alt="${lang === 'bn' ? 'উড মেটালের হাতে গড়া কাঠের খাট, শোরুমে' : 'A handmade Wood Metal bed in the showroom'}" width="1400" height="927" fetchpriority="high">
     </a>
     <div class="years-badge">${t.yearsBadge}</div>
   </div>
@@ -422,6 +423,10 @@ function aboutPage(lang) {
 ${breadcrumbs(lang, [['/', t.home], ['/about/', t.aboutTitle]])}
 ${storySection(lang)}
 <section class="wrap section">
+  <h2>${lang === 'bn' ? 'আমাদের শোরুম আর কাজ' : 'Our showroom and work'}</h2>
+  <div class="photo-grid">
+    ${[['sofa-showroom', 1400, 927], ['showroom-2', 1400, 1050], ['bed-showroom', 1400, 927], ['showroom-1', 1400, 1867], ['hatirpool-front', 1040, 780], ['hatirpool-sign', 1040, 780]].map(([n, w, h]) => `<a href="/img/showroom/${n}.webp"><img src="/img/showroom/${n}-sm.webp" alt="" width="640" height="${Math.round(640 * h / w)}" loading="lazy"></a>`).join('')}
+  </div>
   <div class="steps">${t.trust.map((s) => `<div class="step"><strong>${s.h}</strong><span>${s.p}</span></div>`).join('')}</div>
   <div class="btn-row"><a class="btn btn-dark btn-lg" href="${url(lang, '/furniture/')}">${t.ctaBrowse}</a><a class="btn btn-outline btn-lg" href="${url(lang, '/contact/')}">${t.nav.contact}</a></div>
 </section>`;

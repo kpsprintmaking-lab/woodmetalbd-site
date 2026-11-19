@@ -170,6 +170,12 @@
     "sm": "/img/p/almirah-342-1-sm.webp",
     "w": 1000,
     "h": 1000
+   },
+   {
+    "src": "/img/p/almirah-342-x2.webp",
+    "sm": "/img/p/almirah-342-x2-sm.webp",
+    "w": 1000,
+    "h": 1000
    }
   ],
   "old_id": 152
@@ -645,6 +651,12 @@
     "sm": "/img/p/bed-508-1-sm.webp",
     "w": 1000,
     "h": 1000
+   },
+   {
+    "src": "/img/p/bed-508-x2.webp",
+    "sm": "/img/p/bed-508-x2-sm.webp",
+    "w": 1000,
+    "h": 1055
    }
   ],
   "old_id": 192
@@ -844,6 +856,30 @@
     "sm": "/img/p/sofa-547-2-sm.webp",
     "w": 1000,
     "h": 667
+   },
+   {
+    "src": "/img/p/sofa-547-x3.webp",
+    "sm": "/img/p/sofa-547-x3-sm.webp",
+    "w": 1000,
+    "h": 1055
+   },
+   {
+    "src": "/img/p/sofa-547-x4.webp",
+    "sm": "/img/p/sofa-547-x4-sm.webp",
+    "w": 1000,
+    "h": 1500
+   },
+   {
+    "src": "/img/p/sofa-547-x5.webp",
+    "sm": "/img/p/sofa-547-x5-sm.webp",
+    "w": 1000,
+    "h": 667
+   },
+   {
+    "src": "/img/p/sofa-547-x6.webp",
+    "sm": "/img/p/sofa-547-x6-sm.webp",
+    "w": 1000,
+    "h": 1000
    }
   ],
   "old_id": 324
@@ -937,6 +973,12 @@
     "sm": "/img/p/sofa-566-2-sm.webp",
     "w": 1000,
     "h": 1000
+   },
+   {
+    "src": "/img/p/sofa-566-x3.webp",
+    "sm": "/img/p/sofa-566-x3-sm.webp",
+    "w": 1000,
+    "h": 667
    }
   ],
   "old_id": 348
@@ -997,6 +1039,12 @@
    {
     "src": "/img/p/sofa-570-2.webp",
     "sm": "/img/p/sofa-570-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/sofa-570-x3.webp",
+    "sm": "/img/p/sofa-570-x3-sm.webp",
     "w": 1000,
     "h": 1000
    }
@@ -1121,6 +1169,12 @@
    {
     "src": "/img/p/sofa-569-2.webp",
     "sm": "/img/p/sofa-569-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/sofa-569-x3.webp",
+    "sm": "/img/p/sofa-569-x3-sm.webp",
     "w": 1000,
     "h": 1000
    }
@@ -1278,6 +1332,12 @@
     "sm": "/img/p/sofa-554-2-sm.webp",
     "w": 1000,
     "h": 1000
+   },
+   {
+    "src": "/img/p/sofa-554-x3.webp",
+    "sm": "/img/p/sofa-554-x3-sm.webp",
+    "w": 1000,
+    "h": 1000
    }
   ],
   "old_id": 423
@@ -1307,6 +1367,30 @@
    {
     "src": "/img/p/sofa-580-2.webp",
     "sm": "/img/p/sofa-580-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/sofa-580-x3.webp",
+    "sm": "/img/p/sofa-580-x3-sm.webp",
+    "w": 1000,
+    "h": 1500
+   },
+   {
+    "src": "/img/p/sofa-580-x4.webp",
+    "sm": "/img/p/sofa-580-x4-sm.webp",
+    "w": 1000,
+    "h": 1055
+   },
+   {
+    "src": "/img/p/sofa-580-x5.webp",
+    "sm": "/img/p/sofa-580-x5-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/sofa-580-x6.webp",
+    "sm": "/img/p/sofa-580-x6-sm.webp",
     "w": 1000,
     "h": 1000
    }
@@ -1656,6 +1740,18 @@
     "sm": "/img/p/bookshelf-1022-2-sm.webp",
     "w": 1000,
     "h": 1000
+   },
+   {
+    "src": "/img/p/bookshelf-1022-x3.webp",
+    "sm": "/img/p/bookshelf-1022-x3-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/bookshelf-1022-x4.webp",
+    "sm": "/img/p/bookshelf-1022-x4-sm.webp",
+    "w": 1000,
+    "h": 667
    }
   ],
   "old_id": 453
@@ -1718,6 +1814,12 @@
     "sm": "/img/p/bookshelf-1026-2-sm.webp",
     "w": 1000,
     "h": 1000
+   },
+   {
+    "src": "/img/p/bookshelf-1026-x3.webp",
+    "sm": "/img/p/bookshelf-1026-x3-sm.webp",
+    "w": 1000,
+    "h": 768
    }
   ],
   "old_id": 455
@@ -1966,6 +2068,24 @@
     "sm": "/img/p/dining-set-46-b-2-sm.webp",
     "w": 1000,
     "h": 1000
+   },
+   {
+    "src": "/img/p/dining-set-46-b-x3.webp",
+    "sm": "/img/p/dining-set-46-b-x3-sm.webp",
+    "w": 1000,
+    "h": 667
+   },
+   {
+    "src": "/img/p/dining-set-46-b-x4.webp",
+    "sm": "/img/p/dining-set-46-b-x4-sm.webp",
+    "w": 1000,
+    "h": 667
+   },
+   {
+    "src": "/img/p/dining-set-46-b-x5.webp",
+    "sm": "/img/p/dining-set-46-b-x5-sm.webp",
+    "w": 1000,
+    "h": 667
    }
   ],
   "old_id": 477
@@ -2028,6 +2148,12 @@
     "sm": "/img/p/dining-set-60-2-sm.webp",
     "w": 1000,
     "h": 1000
+   },
+   {
+    "src": "/img/p/dining-set-60-x3.webp",
+    "sm": "/img/p/dining-set-60-x3-sm.webp",
+    "w": 1000,
+    "h": 667
    }
   ],
   "old_id": 480
@@ -2059,6 +2185,12 @@
     "sm": "/img/p/dining-set-61-2-sm.webp",
     "w": 1000,
     "h": 1000
+   },
+   {
+    "src": "/img/p/dining-set-61-x3.webp",
+    "sm": "/img/p/dining-set-61-x3-sm.webp",
+    "w": 1000,
+    "h": 667
    }
   ],
   "old_id": 482
@@ -2127,6 +2259,18 @@
     "sm": "/img/p/sofa-cum-bed-673-3-sm.webp",
     "w": 1000,
     "h": 1000
+   },
+   {
+    "src": "/img/p/sofa-cum-bed-673-x4.webp",
+    "sm": "/img/p/sofa-cum-bed-673-x4-sm.webp",
+    "w": 1000,
+    "h": 667
+   },
+   {
+    "src": "/img/p/sofa-cum-bed-673-x5.webp",
+    "sm": "/img/p/sofa-cum-bed-673-x5-sm.webp",
+    "w": 1000,
+    "h": 667
    }
   ],
   "old_id": 489
@@ -2158,6 +2302,18 @@
     "sm": "/img/p/crockery-shelf-183-2-sm.webp",
     "w": 1000,
     "h": 1000
+   },
+   {
+    "src": "/img/p/crockery-shelf-183-x3.webp",
+    "sm": "/img/p/crockery-shelf-183-x3-sm.webp",
+    "w": 1000,
+    "h": 667
+   },
+   {
+    "src": "/img/p/crockery-shelf-183-x4.webp",
+    "sm": "/img/p/crockery-shelf-183-x4-sm.webp",
+    "w": 765,
+    "h": 1024
    }
   ],
   "old_id": 490
@@ -2623,6 +2779,12 @@
     "sm": "/img/p/dressing-table-719-2-sm.webp",
     "w": 1000,
     "h": 1000
+   },
+   {
+    "src": "/img/p/dressing-table-719-x3.webp",
+    "sm": "/img/p/dressing-table-719-x3-sm.webp",
+    "w": 1000,
+    "h": 667
    }
   ],
   "old_id": 612
@@ -2840,6 +3002,18 @@
     "sm": "/img/p/dressing-table-738-2-sm.webp",
     "w": 1000,
     "h": 1000
+   },
+   {
+    "src": "/img/p/dressing-table-738-x3.webp",
+    "sm": "/img/p/dressing-table-738-x3-sm.webp",
+    "w": 1000,
+    "h": 667
+   },
+   {
+    "src": "/img/p/dressing-table-738-x4.webp",
+    "sm": "/img/p/dressing-table-738-x4-sm.webp",
+    "w": 1000,
+    "h": 667
    }
   ],
   "old_id": 619
@@ -2964,6 +3138,12 @@
     "sm": "/img/p/divan-632-2-sm.webp",
     "w": 1000,
     "h": 1000
+   },
+   {
+    "src": "/img/p/divan-632-x3.webp",
+    "sm": "/img/p/divan-632-x3-sm.webp",
+    "w": 1000,
+    "h": 667
    }
   ],
   "old_id": 635
@@ -2995,6 +3175,12 @@
     "sm": "/img/p/divan-633-2-sm.webp",
     "w": 1000,
     "h": 1000
+   },
+   {
+    "src": "/img/p/divan-633-x3.webp",
+    "sm": "/img/p/divan-633-x3-sm.webp",
+    "w": 1000,
+    "h": 667
    }
   ],
   "old_id": 636
@@ -3024,6 +3210,30 @@
    {
     "src": "/img/p/divan-634-2.webp",
     "sm": "/img/p/divan-634-2-sm.webp",
+    "w": 1000,
+    "h": 1000
+   },
+   {
+    "src": "/img/p/divan-634-x3.webp",
+    "sm": "/img/p/divan-634-x3-sm.webp",
+    "w": 1000,
+    "h": 1500
+   },
+   {
+    "src": "/img/p/divan-634-x4.webp",
+    "sm": "/img/p/divan-634-x4-sm.webp",
+    "w": 1000,
+    "h": 667
+   },
+   {
+    "src": "/img/p/divan-634-x5.webp",
+    "sm": "/img/p/divan-634-x5-sm.webp",
+    "w": 1000,
+    "h": 1055
+   },
+   {
+    "src": "/img/p/divan-634-x6.webp",
+    "sm": "/img/p/divan-634-x6-sm.webp",
     "w": 1000,
     "h": 1000
    }
@@ -3057,6 +3267,12 @@
     "sm": "/img/p/divan-636-2-sm.webp",
     "w": 1000,
     "h": 1000
+   },
+   {
+    "src": "/img/p/divan-636-x3.webp",
+    "sm": "/img/p/divan-636-x3-sm.webp",
+    "w": 1000,
+    "h": 1000
    }
   ],
   "old_id": 638
@@ -3088,6 +3304,12 @@
     "sm": "/img/p/divan-637-2-sm.webp",
     "w": 1000,
     "h": 1000
+   },
+   {
+    "src": "/img/p/divan-637-x3.webp",
+    "sm": "/img/p/divan-637-x3-sm.webp",
+    "w": 1000,
+    "h": 667
    }
   ],
   "old_id": 639
@@ -3522,6 +3744,12 @@
     "sm": "/img/p/tv-shelf-803-2-sm.webp",
     "w": 1000,
     "h": 1000
+   },
+   {
+    "src": "/img/p/tv-shelf-803-x3.webp",
+    "sm": "/img/p/tv-shelf-803-x3-sm.webp",
+    "w": 1000,
+    "h": 1500
    }
   ],
   "old_id": 714
@@ -3739,6 +3967,18 @@
     "sm": "/img/p/shoe-rack-913-2-sm.webp",
     "w": 1000,
     "h": 1000
+   },
+   {
+    "src": "/img/p/shoe-rack-913-x3.webp",
+    "sm": "/img/p/shoe-rack-913-x3-sm.webp",
+    "w": 1000,
+    "h": 1500
+   },
+   {
+    "src": "/img/p/shoe-rack-913-x4.webp",
+    "sm": "/img/p/shoe-rack-913-x4-sm.webp",
+    "w": 1000,
+    "h": 667
    }
   ],
   "old_id": 730
@@ -4086,6 +4326,12 @@
     "sm": "/img/p/almirah-367-2-sm.webp",
     "w": 1000,
     "h": 1000
+   },
+   {
+    "src": "/img/p/almirah-367-x3.webp",
+    "sm": "/img/p/almirah-367-x3-sm.webp",
+    "w": 1000,
+    "h": 667
    }
   ],
   "old_id": 792
@@ -4148,6 +4394,12 @@
     "sm": "/img/p/wardrobe-235-2-sm.webp",
     "w": 1000,
     "h": 1000
+   },
+   {
+    "src": "/img/p/wardrobe-235-x3.webp",
+    "sm": "/img/p/wardrobe-235-x3-sm.webp",
+    "w": 1000,
+    "h": 667
    }
   ],
   "old_id": 842
@@ -4179,6 +4431,12 @@
     "sm": "/img/p/wardrobe-236-2-sm.webp",
     "w": 1000,
     "h": 1000
+   },
+   {
+    "src": "/img/p/wardrobe-236-x3.webp",
+    "sm": "/img/p/wardrobe-236-x3-sm.webp",
+    "w": 1000,
+    "h": 667
    }
   ],
   "old_id": 843
@@ -4210,6 +4468,12 @@
     "sm": "/img/p/bookshelf-1039-2-sm.webp",
     "w": 1000,
     "h": 1000
+   },
+   {
+    "src": "/img/p/bookshelf-1039-x3.webp",
+    "sm": "/img/p/bookshelf-1039-x3-sm.webp",
+    "w": 1000,
+    "h": 667
    }
   ],
   "old_id": 844
