@@ -58,9 +58,9 @@ p { margin: 0 0 1em; }
 .topstrip a { color: var(--yellow); text-decoration: none; }
 .topstrip-r { display: flex; gap: 20px; flex-wrap: wrap; }
 .site-header { background: var(--white); border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 40; }
-.header-row { display: flex; flex-wrap: wrap; gap: 12px 28px; align-items: center; justify-content: space-between; padding-top: 14px; padding-bottom: 14px; }
+.header-row { display: flex; flex-wrap: wrap; gap: 12px 28px; align-items: center; justify-content: space-between; padding-top: 10px; padding-bottom: 10px; }
 .brand { display: flex; flex-direction: column; gap: 3px; text-decoration: none; color: var(--ink); }
-.brand-logo { width: 168px; height: auto; }
+.brand-logo { height: 92px; width: auto; }
 .brand-tag { font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted); }
 .lang-bn .brand-tag { text-transform: none; letter-spacing: 0; font-size: 13px; }
 .main-nav { display: flex; flex-wrap: wrap; gap: 4px 26px; font-size: 16px; font-weight: 500; }
@@ -296,7 +296,7 @@ textarea.field { resize: vertical; }
   .hide-sm { display: none; }
   .site-header { position: static; }
   .header-row { gap: 10px 16px; }
-  .brand-logo { width: 138px; }
+  .brand-logo { height: 72px; }
   .main-nav { order: 3; width: 100%; gap: 2px 18px; font-size: 15px; }
   .hero { padding-top: 32px; gap: 40px; }
   .hero-frame { padding: 14px; }

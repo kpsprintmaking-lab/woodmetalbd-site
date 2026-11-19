@@ -87,8 +87,7 @@ ${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld)}</script
 <header class="site-header">
   <div class="wrap header-row">
     <a class="brand" href="${url(lang, '/')}">
-      <img class="brand-logo" src="/img/logo-h.png" alt="Wood Metal" width="640" height="157">
-      <span class="brand-tag">${t.tagline}</span>
+      <img class="brand-logo" src="/img/logo-stack.png" alt="Wood Metal, handmade furniture" width="341" height="406">
     </a>
     <nav class="main-nav" aria-label="${lang === 'bn' ? 'প্রধান মেনু' : 'Main'}">
       ${navItem('/furniture/', t.nav.shop)}
