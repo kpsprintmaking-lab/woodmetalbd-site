@@ -38,7 +38,7 @@ pre{white-space:pre-wrap;font:inherit;margin:6px 0}
 </style></head><body>${body}</body></html>`, { headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store' } });
 
 export async function onRequest({ request, env, params }) {
-  if (!env.ADMIN_PASSWORD) return new Response('Set the ADMIN_PASSWORD secret in Cloudflare Pages settings first.', { status: 503 });
+  if (!env.ADMIN_PASSWORD) return new Response('ADMIN_PASSWORD পাওয়া যায়নি। Cloudflare Pages > Settings > Variables and Secrets-এ Production-এর জন্য ADMIN_PASSWORD নামে Secret (Text নয়) দিন, তারপর নতুন deploy করুন।\nADMIN_PASSWORD not found: add it as a Secret (not Text) for Production, then redeploy.', { status: 503, headers: { 'content-type': 'text/plain; charset=utf-8' } });
   if (!authorised(request, env)) {
     return new Response('Login required', { status: 401, headers: { 'WWW-Authenticate': 'Basic realm="Wood Metal admin", charset="UTF-8"' } });
   }
