@@ -275,8 +275,8 @@ textarea.field { resize: vertical; }
 .social a { color: var(--yellow); }
 /* Staff login link to /admin */
 .footer-bottom { display: flex; justify-content: flex-start; column-gap: 24px; align-items: center; row-gap: 6px; flex-wrap: wrap; }
-.staff-login { display: inline-flex; align-items: center; gap: 6px; color: var(--grey-2); text-decoration: none; padding: 6px 0; }
-.staff-login:hover, .staff-login:focus-visible { color: var(--yellow); }
+.site-footer .staff-login { display: inline-flex; align-items: center; gap: 8px; margin-top: 6px; padding: 8px 14px; border: 1.5px solid var(--yellow); border-radius: 8px; color: var(--yellow); text-decoration: none; font-weight: 600; }
+.site-footer .staff-login:hover, .site-footer .staff-login:focus-visible { background: var(--yellow); color: var(--black); }
 .footer-bottom { border-top: 1px solid var(--charcoal); padding-top: 14px; padding-bottom: 96px; font-size: 14px; color: var(--grey-2); }
 
 /* floating WhatsApp */
