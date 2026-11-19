@@ -5,8 +5,12 @@ import { CATEGORIES, POLISH, WOOD, T } from './strings.mjs';
 
 export { CATEGORIES };
 
-// WhatsApp links always open in a new tab/window.
-const waTargets = (html) => html.replace(/<a ([^>]*?)href="https:\/\/wa\.me\//g, '<a $1target="_blank" rel="noopener" href="https://wa.me/');
+// Links to other sites (WhatsApp, Facebook, maps...) open in a new tab/window.
+const waTargets = (html) => html.replace(/<a ([^>]*?)href="(https?:\/\/[^"]+)"([^>]*)>/g, (m, pre, href, post) => {
+  if (/target=/.test(pre + post) || href.startsWith('https://www.woodmetalbd.com')) return m;
+  const clean = (x) => x.replace(/\s*rel="[^"]*"/g, '');
+  return `<a ${clean(pre)}target="_blank" rel="noopener" href="${href}"${clean(post)}>`;
+});
 
 export function createSite({ cfg, products, slides, assetV }) {
   const SLIDES = slides;
