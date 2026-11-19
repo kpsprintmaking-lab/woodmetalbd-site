@@ -231,6 +231,7 @@ function showroomCards(lang) {
   const t = T[lang];
   return `<div class="showrooms">
   <div class="showroom">
+    <img class="showroom-photo" src="/img/showroom/china-city-1-sm.webp" alt="${lang === 'bn' ? 'চায়না সিটিতে উড মেটালের নতুন শোরুম' : 'The new Wood Metal showroom at China City'}" width="640" height="716" loading="lazy">
     <span class="tag">${t.newShowroom}</span>
     <h3>${lang === 'bn' ? 'চায়না সিটি, বারিধারা' : 'China City, Baridhara'}</h3>
     <p>${t.address}</p>
@@ -240,7 +241,6 @@ function showroomCards(lang) {
     </div>
   </div>
   <div class="showroom showroom-old">
-    <img class="showroom-photo" src="/img/showroom/hatirpool-front-sm.webp" alt="${lang === 'bn' ? 'হাতিরপুলের শোরুম' : 'Hatirpool showroom'}" width="640" height="480" loading="lazy">
     <span class="tag tag-muted">${t.oldShowroom}</span>
     <h3>${lang === 'bn' ? 'হাতিরপুল, ধানমন্ডি' : 'Hatirpool, Dhanmondi'}</h3>
     <p>${t.oldAddress}</p>
@@ -464,9 +464,9 @@ function aboutPage(lang) {
 ${breadcrumbs(lang, [['/', t.home], ['/about/', t.aboutTitle]])}
 ${storySection(lang)}
 <section class="wrap section">
-  <h2>${lang === 'bn' ? 'আমাদের শোরুম আর কাজ' : 'Our showroom and work'}</h2>
+  <h2>${lang === 'bn' ? 'আমাদের নতুন শোরুম, চায়না সিটি, বারিধারা' : 'Our new showroom, China City, Baridhara'}</h2>
   <div class="photo-grid">
-    ${[['sofa-showroom', 1400, 927], ['showroom-2', 1400, 1050], ['bed-showroom', 1400, 927], ['showroom-1', 1400, 1867], ['hatirpool-front', 1040, 780], ['hatirpool-sign', 1040, 780]].map(([n, w, h]) => `<a href="/img/showroom/${n}.webp"><img src="/img/showroom/${n}-sm.webp" alt="" width="640" height="${Math.round(640 * h / w)}" loading="lazy"></a>`).join('')}
+    ${[1, 2, 3, 4].map((n) => `<a href="/img/showroom/china-city-${n}.webp" target="_blank"><img src="/img/showroom/china-city-${n}-sm.webp" alt="${lang === 'bn' ? 'চায়না সিটির নতুন শোরুম' : 'New showroom at China City'}" width="640" height="716" loading="lazy"></a>`).join('')}
   </div>
   <div class="steps">${t.trust.map((s) => `<div class="step"><strong>${s.h}</strong><span>${s.p}</span></div>`).join('')}</div>
   <div class="btn-row"><a class="btn btn-dark btn-lg" href="${url(lang, '/furniture/')}">${t.ctaBrowse}</a><a class="btn btn-outline btn-lg" href="${url(lang, '/contact/')}">${t.nav.contact}</a></div>
