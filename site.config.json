@@ -1,7 +1,6 @@
 {
   "siteUrl": "https://www.woodmetalbd.com",
-  "whatsapp": "8801303389821",
-  "whatsappNote": "TESTING: Vaab's number. Change to 8801970802121 before launch.",
+  "whatsapp": "8801970802121",
   "phones": [
     { "tel": "+8801844630465", "label": "01844 630 465" },
     { "tel": "+8801970802121", "label": "01970 802121" }
