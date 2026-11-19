@@ -82,6 +82,19 @@
     start();
   }
 
+  // Chat box
+  var chat = $('#chat');
+  if (chat) {
+    var panel = $('.chat-panel', chat), tog = $('.chat-toggle', chat);
+    var setOpen = function (open) {
+      panel.hidden = !open; chat.classList.toggle('open', open); tog.setAttribute('aria-expanded', open);
+      if (open) { var ta = $('textarea', panel); if (ta && !$('.chat-form', panel).classList.contains('done')) ta.focus(); }
+    };
+    tog.addEventListener('click', function () { setOpen(panel.hidden); });
+    $('.chat-close', chat).addEventListener('click', function () { setOpen(false); tog.focus(); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !panel.hidden) { setOpen(false); tog.focus(); } });
+  }
+
   // Lead forms
   var msgsEl = $('#form-msgs');
   var MSG = msgsEl ? JSON.parse(msgsEl.textContent) : {};
@@ -124,6 +137,7 @@
       err.hidden = true;
       var fd = new FormData(form);
       var phone = normalisePhone(fd.get('phone'));
+      if (form.dataset.kind === 'chat' && !String(fd.get('message') || '').trim()) { form.elements.message.focus(); return; }
       if (!String(fd.get('name') || '').trim()) { form.elements.name.focus(); return; }
       if (!phone) { fail(MSG.errPhone); form.elements.phone.focus(); return; }
       btn.disabled = true; btn.textContent = btn.dataset.sending;
@@ -143,7 +157,7 @@
         if (!r.ok) throw new Error('bad');
         form.classList.add('done');
         $('.form-done', form).hidden = false;
-        $('.form-done', form).scrollIntoView({ behavior: 'smooth', block: 'center' });
+        if (form.dataset.kind !== 'chat') $('.form-done', form).scrollIntoView({ behavior: 'smooth', block: 'center' });
       }).catch(function (x) {
         fail(x && x.message === 'many' ? MSG.errMany : MSG.errGeneric);
       });

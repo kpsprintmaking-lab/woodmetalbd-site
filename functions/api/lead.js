@@ -9,7 +9,7 @@
 
 const MAX_PHOTOS = 3;
 const MAX_PHOTO_BYTES = 1.5 * 1024 * 1024;
-const KINDS = { quote: 'Quote request', custom: 'Custom order', contact: 'Contact form' };
+const KINDS = { quote: 'Quote request', custom: 'Custom order', contact: 'Contact form', chat: 'Chat message' };
 
 const json = (status, body) => new Response(JSON.stringify(body), {
   status, headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store' },

@@ -32,3 +32,11 @@ Run `node build.mjs` and open `dist/`, or `npm run dev` for the full site with f
 ## Re-importing the catalog
 
 `scripts/prepare_catalog.py <catalog.json> <raw-image-dir>` regenerates `data/products.json` and the WebP images from a WooCommerce export. Raw images are named `md5(url)[:12] + ext`.
+
+## Admin, users and products (D1)
+
+- `/admin` needs a username + password (table `users`). Roles: `super` (everything, incl. users and deleting products) and `staff` (leads, add/edit products, prices).
+- Products live in the D1 `products` table. The first time someone opens `/admin/products` it is filled from `data/products.json`. After that, edits in `/admin` are the source of truth.
+- `functions/_middleware.js` renders the home, furniture lists, product pages and sitemap from D1 with the same templates as the static build (`src/render.mjs`). If the table is empty or D1 fails, the static pages are served.
+- Photos uploaded in `/admin` are stored in the D1 `media` table and served at `/media/<id>`.
+- Schema: `migrations/0003_users_products.sql`.
