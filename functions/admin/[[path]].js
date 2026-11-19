@@ -7,8 +7,8 @@
 const STATUSES = ['new', 'contacted', 'done'];
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
-// Password check. Uses the ADMIN_PASSWORD secret when Cloudflare provides it,
-// otherwise a salted SHA-256 hash stored in D1 (settings: admin_pw_salt, admin_pw_sha256).
+// Password check. Accepts the ADMIN_PASSWORD secret (if Cloudflare provides it)
+// or the password whose salted SHA-256 hash stored in D1 (settings: admin_pw_salt, admin_pw_sha256).
 const enc = new TextEncoder();
 const hex = (buf) => [...new Uint8Array(buf)].map((b) => b.toString(16).padStart(2, '0')).join('');
 function sameBytes(a, b) {
@@ -21,7 +21,8 @@ async function authorised(request, env) {
   if (!h.startsWith('Basic ')) return false;
   let pass;
   try { pass = new TextDecoder().decode(Uint8Array.from(atob(h.slice(6)), (c) => c.charCodeAt(0))).split(':').slice(1).join(':'); } catch { return false; }
-  if (env.ADMIN_PASSWORD) return sameBytes(enc.encode(pass), enc.encode(env.ADMIN_PASSWORD));
+  pass = pass.trim();
+  if (env.ADMIN_PASSWORD && sameBytes(enc.encode(pass), enc.encode(String(env.ADMIN_PASSWORD).trim()))) return true;
   const rows = (await env.DB.prepare("SELECT key, value FROM settings WHERE key IN ('admin_pw_salt', 'admin_pw_sha256')").all()).results;
   const cfg = Object.fromEntries(rows.map((r) => [r.key, r.value]));
   if (!cfg.admin_pw_salt || !cfg.admin_pw_sha256) return false;
