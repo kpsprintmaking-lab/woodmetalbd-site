@@ -477,7 +477,7 @@ for (const lang of ['bn', 'en']) {
 }
 write('404.html', notFoundPage('bn'));
 
-write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${pages.map((p) => `<url><loc>${cfg.siteUrl}${p}</loc></url>`).join('\n')}\n</urlset>\n`);
+write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${pages.map((p) => `<url><loc>${cfg.siteUrl}${p}</loc><lastmod>${new Date().toISOString().slice(0, 10)}</lastmod></url>`).join('\n')}\n</urlset>\n`);
 write('robots.txt', `User-agent: *\nAllow: /\nDisallow: /admin\nSitemap: ${cfg.siteUrl}/sitemap.xml\n`);
 
 console.log(`Built ${pages.length} pages into dist/`);
