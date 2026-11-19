@@ -39,7 +39,7 @@ const ICON = {
   pin: '<svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>',
   chat: '<svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20.5l1.4-4.6A8 8 0 1 1 21 12z"/><path d="M8.5 11h.01M12 11h.01M15.5 11h.01" stroke-width="3"/></svg>',
   search: '<svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>',
-  swirl: '<svg aria-hidden="true" class="swirl" width="220" height="16" viewBox="0 0 220 16"><path d="M2 10 C 40 2, 80 14, 120 7 S 190 4, 218 9" fill="none" stroke="#B8722C" stroke-width="3" stroke-linecap="round"/></svg>',
+  swirl: '<svg aria-hidden="true" class="swirl" width="220" height="16" viewBox="0 0 220 16"><path d="M2 10 C 40 2, 80 14, 120 7 S 190 4, 218 9" fill="none" stroke="#C38820" stroke-width="3" stroke-linecap="round"/></svg>',
 };
 
 
@@ -219,7 +219,7 @@ function leadForm(lang, kind, product) {
   <p class="form-error" role="alert" hidden></p>
   <button type="submit" class="btn btn-dark btn-lg" data-sending="${t.sending}">${t.send}</button>
   <div class="form-done" hidden>
-    <svg aria-hidden="true" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#1F8F55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M7 12.5l3 3 7-7"/></svg>
+    <svg aria-hidden="true" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#C38820" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M7 12.5l3 3 7-7"/></svg>
     <h3>${t.thanks}</h3>
     <p>${t.thanksText}</p>
     <a class="btn btn-wa" href="${wa(product ? t.waProduct(pName(lang, product), product.code, cfg.siteUrl + url(lang, `/p/${product.slug}/`)) : (isCustom ? t.waCustom : t.waGeneral))}">${ICON.wa}<span>WhatsApp</span></a>
@@ -406,7 +406,7 @@ ${breadcrumbs(lang, [['/', t.home], [`/furniture/${c.slug}/`, c[lang]], [pathnam
     </div>
     <div class="polish-pick">
       <span>${t.polishPick}: <strong id="polish-name">${POLISH[p.polishes[0]]?.[lang] ?? ''}</strong></span>
-      <div class="swatches">${p.polishes.map((k, i) => `<button type="button" class="swatch${i === 0 ? ' on' : ''}" aria-pressed="${i === 0}" data-polish="${k}" data-label="${POLISH[k]?.[lang] ?? k}"><span style="background:${POLISH[k]?.color ?? '#999'}"></span>${POLISH[k]?.[lang] ?? k}</button>`).join('')}</div>
+      <div class="swatches">${p.polishes.map((k, i) => `<button type="button" class="swatch${i === 0 ? ' on' : ''}" aria-pressed="${i === 0}" data-polish="${k}" data-label="${POLISH[k]?.[lang] ?? k}"><span style="background:${POLISH[k]?.color ?? '#666666'}"></span>${POLISH[k]?.[lang] ?? k}</button>`).join('')}</div>
     </div>
     <div class="buy">
       <a class="btn btn-wa btn-lg btn-block" id="wa-btn" data-base="${esc(t.waProduct(name, p.code, pageUrl))}" data-polish-word="${t.polish}" href="${wa(t.waProduct(name, p.code, pageUrl))}">${ICON.wa}<span>${t.waBtn}</span></a>
