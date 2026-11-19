@@ -45,6 +45,43 @@
     });
   }
 
+  // Home slide banner: fades every 6s, pauses on hover/focus, swipe on phones
+  var slider = $('.slider');
+  if (slider) {
+    var slides = $$('.slide', slider), dots = $$('.slide-dots button', slider), cur = 0, timer = null;
+    var still = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var go = function (n) {
+      cur = (n + slides.length) % slides.length;
+      slides.forEach(function (s, i) {
+        var on = i === cur;
+        s.classList.toggle('on', on);
+        if (on) s.removeAttribute('aria-hidden'); else s.setAttribute('aria-hidden', 'true');
+        $$('a', s).forEach(function (a) { if (on) a.removeAttribute('tabindex'); else a.setAttribute('tabindex', '-1'); });
+      });
+      dots.forEach(function (d, i) { if (i === cur) d.setAttribute('aria-current', 'true'); else d.removeAttribute('aria-current'); });
+    };
+    var stop = function () { clearInterval(timer); timer = null; };
+    var start = function () { if (still || slides.length < 2) return; stop(); timer = setInterval(function () { go(cur + 1); }, 6000); };
+    $('.slide-nav.prev', slider).addEventListener('click', function () { go(cur - 1); start(); });
+    $('.slide-nav.next', slider).addEventListener('click', function () { go(cur + 1); start(); });
+    dots.forEach(function (d, i) { d.addEventListener('click', function () { go(i); start(); }); });
+    slider.addEventListener('mouseenter', stop);
+    slider.addEventListener('mouseleave', start);
+    slider.addEventListener('focusin', stop);
+    slider.addEventListener('focusout', start);
+    document.addEventListener('visibilitychange', function () { if (document.hidden) stop(); else start(); });
+    var x0 = null;
+    slider.addEventListener('touchstart', function (e) { x0 = e.touches[0].clientX; stop(); }, { passive: true });
+    slider.addEventListener('touchend', function (e) {
+      if (x0 !== null) {
+        var dx = e.changedTouches[0].clientX - x0;
+        if (Math.abs(dx) > 40) go(cur + (dx < 0 ? 1 : -1));
+      }
+      x0 = null; start();
+    });
+    start();
+  }
+
   // Lead forms
   var msgsEl = $('#form-msgs');
   var MSG = msgsEl ? JSON.parse(msgsEl.textContent) : {};

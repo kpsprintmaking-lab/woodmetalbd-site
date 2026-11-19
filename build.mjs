@@ -8,6 +8,7 @@ const ROOT = path.dirname(new URL(import.meta.url).pathname);
 const OUT = path.join(ROOT, 'dist');
 const cfg = JSON.parse(fs.readFileSync(path.join(ROOT, 'site.config.json'), 'utf8'));
 const products = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/products.json'), 'utf8'));
+const SLIDES = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/slides.json'), 'utf8')).slides;
 const bySlug = Object.fromEntries(products.map((p) => [p.slug, p]));
 const catBySlug = Object.fromEntries(CATEGORIES.map((c) => [c.slug, c]));
 const ASSET_V = Date.now().toString(36);
@@ -223,12 +224,20 @@ function storySection(lang) {
   const t = T[lang];
   return `<section id="story" class="story">
   <div class="wrap story-grid">
-    <div class="story-card">
-      <h2>${t.storyTitle}</h2>
-      <p>${t.storyText}</p>
-      <div class="owner">
-        <img src="/img/owner.webp" alt="${t.owner}" width="72" height="72" loading="lazy">
-        <span><strong>${t.owner}</strong><small>${t.ownerRole}</small></span>
+    <div class="story-art">
+      <div class="story-card">
+        <img class="deco deco-shavings" src="/img/story/shavings.webp" alt="" width="358" height="292" loading="lazy">
+        <img class="deco deco-saw" src="/img/story/saw.webp" alt="" width="376" height="174" loading="lazy">
+        <img class="deco deco-hammer" src="/img/story/hammer.webp" alt="" width="270" height="224" loading="lazy">
+        <img class="deco deco-plane" src="/img/story/plane.webp" alt="" width="268" height="226" loading="lazy">
+        <img class="deco deco-chisels" src="/img/story/chisels.webp" alt="" width="288" height="236" loading="lazy">
+        <div class="story-in">
+        <h2>${t.storyTitleArt}</h2>
+        <p>${t.storyText}</p>
+        <img class="story-owner" src="/img/owner.webp" alt="${t.owner}" width="120" height="120" loading="lazy">
+        <img class="story-sign" src="/img/story/sign.webp" alt="" width="152" height="64" loading="lazy">
+        <span class="story-name">${t.owner}<small>${t.ownerRole}</small></span>
+        </div>
       </div>
     </div>
     <div class="craft">
@@ -247,22 +256,23 @@ function homePage(lang) {
   const hero = bySlug[cfg.heroProduct];
   const featured = cfg.featured.map((s) => bySlug[s]).filter(Boolean);
   const body = `
-<section class="hero wrap">
-  <div class="hero-text">
-    <span class="badge-tilt">${t.heroBadge}</span>
-    <h1>${t.heroTitle}</h1>
-    <p class="lead">${t.heroText}</p>
-    <div class="btn-row">
-      <a class="btn btn-wa btn-lg" href="${wa(t.waGeneral)}">${ICON.wa}<span>${t.ctaWa}</span></a>
-      <a class="btn btn-dark btn-lg" href="${url(lang, '/furniture/')}">${t.ctaBrowse}</a>
-    </div>
+<section class="slider" aria-roledescription="carousel" aria-label="${lang === 'bn' ? 'আমাদের কাজ' : 'Our work'}">
+  <div class="slides">
+    ${SLIDES.map((sl, i) => { const c = sl[lang]; const H = i === 0 ? 'h1' : 'h2'; return `<div class="slide${i === 0 ? ' on' : ''}" role="group" aria-roledescription="slide" aria-label="${num(lang, i + 1)} / ${num(lang, SLIDES.length)}"${i === 0 ? '' : ' aria-hidden="true"'}>
+      <img src="${sl.img}" srcset="${sl.sm} 640w, ${sl.img} ${sl.w}w" sizes="100vw" alt="${esc(c.alt)}" width="${sl.w}" height="${sl.h}"${i === 0 ? ' fetchpriority="high"' : ' loading="lazy"'}>
+      <div class="slide-cap wrap">
+        <${H}>${esc(c.title)}</${H}>
+        <p>${esc(c.text)}</p>
+        <div class="btn-row">
+          <a class="btn btn-wa btn-lg" href="${url(lang, sl.href)}"${i === 0 ? '' : ' tabindex="-1"'}>${esc(c.cta)}</a>
+          <a class="btn btn-light btn-lg" href="${wa(t.waGeneral)}"${i === 0 ? '' : ' tabindex="-1"'}>${ICON.wa}<span>WhatsApp</span></a>
+        </div>
+      </div>
+    </div>`; }).join('\n    ')}
   </div>
-  <div class="hero-art">
-    <a class="hero-frame hero-photo" href="${url(lang, '/furniture/beds/')}">
-      <img src="/img/showroom/bed-showroom.webp" srcset="/img/showroom/bed-showroom-sm.webp 640w, /img/showroom/bed-showroom.webp 1400w" sizes="(max-width: 720px) 100vw, 560px" alt="${lang === 'bn' ? 'উড মেটালের হাতে গড়া কাঠের খাট, শোরুমে' : 'A handmade Wood Metal bed in the showroom'}" width="1400" height="927" fetchpriority="high">
-    </a>
-    <div class="years-badge">${t.yearsBadge}</div>
-  </div>
+  <button class="slide-nav prev" type="button" aria-label="${lang === 'bn' ? 'আগের ছবি' : 'Previous slide'}"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></button>
+  <button class="slide-nav next" type="button" aria-label="${lang === 'bn' ? 'পরের ছবি' : 'Next slide'}"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button>
+  <div class="slide-dots">${SLIDES.map((_, i) => `<button type="button" aria-label="${num(lang, i + 1)}"${i === 0 ? ' aria-current="true"' : ''}></button>`).join('')}</div>
 </section>
 <section class="trust">
   <div class="wrap trust-grid">
