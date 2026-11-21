@@ -11,7 +11,10 @@
 //   /admin/media               POST a photo (JSON, base64) -> { id }
 //   /admin/users               super only
 //   /admin/password            change your own password
+//   /admin/quotes, /receipts   quotations and money receipts (src/admin-books.mjs)
+//   /admin/books               income & expense, monthly report (super only)
 import { CATEGORIES, POLISH } from '../../src/strings.mjs';
+import { books } from '../../src/admin-books.mjs';
 
 const STATUSES = ['new', 'contacted', 'done'];
 const STATUS_BN = { new: 'নতুন', contacted: 'যোগাযোগ হয়েছে', done: 'শেষ' };
@@ -118,6 +121,9 @@ tr.off td{opacity:.55}
 function page(title, body, { user, on, flash, err } = {}) {
   const nav = user ? `<nav>
     <a href="/admin/"${on === 'leads' ? ' class="on"' : ''}>লিড</a>
+    <a href="/admin/quotes"${on === 'quotes' ? ' class="on"' : ''}>কোটেশন</a>
+    <a href="/admin/receipts"${on === 'receipts' ? ' class="on"' : ''}>মানি রিসিট</a>
+    ${user.role === 'super' ? `<a href="/admin/books"${on === 'books' ? ' class="on"' : ''}>হিসাব</a>` : ''}
     <a href="/admin/products"${on === 'products' ? ' class="on"' : ''}>প্রোডাক্ট</a>
     ${user.role === 'super' ? `<a href="/admin/users"${on === 'users' ? ' class="on"' : ''}>ইউজার</a>` : ''}
     <a href="/admin/password"${on === 'password' ? ' class="on"' : ''}>পাসওয়ার্ড</a>
@@ -175,6 +181,9 @@ export async function onRequest({ request, env, params }) {
     if (parts[0] === 'photo' && parts[1]) return leadPhoto(env, parts[1]);
     if (route === 'status' && post) return leadStatus(request, env, url);
     if (route === 'media' && post) return uploadMedia(request, env, user);
+    if (['books', 'quotes', 'receipts'].includes(parts[0])) {
+      return await books({ request, env, url, user, rest: parts.slice(1), post, section: parts[0], page, redirect, withMsg, flashOf, html });
+    }
     if (parts[0] === 'products') return products(request, env, url, user, parts.slice(1), post);
     if (parts[0] === 'users') {
       if (user.role !== 'super') return page('অনুমতি নেই', '<p>এই পাতাটা শুধু সুপার অ্যাডমিনের জন্য।</p>', { user });
@@ -283,7 +292,7 @@ async function leadsPage(env, url, user) {
   <div class="bar"><a class="btn ${filter ? 'o' : ''} s" href="/admin/">সব (${Object.values(counts).reduce((a, b) => a + b, 0)})</a>
     ${STATUSES.map((s) => `<a class="btn ${filter === s ? '' : 'o'} s" href="/admin/?status=${s}">${STATUS_BN[s]} (${counts[s] || 0})</a>`).join('')}</div>
   ${leads.length ? leads.map((l) => `<div class="box lead ${esc(l.status)}">
-    <div class="top"><b>${esc(l.name)}</b><a href="tel:${esc(l.phone)}">${esc(l.phone)}</a><a class="btn g s" href="https://wa.me/88${esc(l.phone)}" target="_blank" rel="noopener">WhatsApp</a>
+    <div class="top"><b>${esc(l.name)}</b><a href="tel:${esc(l.phone)}">${esc(l.phone)}</a><a class="btn g s" href="https://wa.me/88${esc(l.phone)}" target="_blank" rel="noopener">WhatsApp</a><a class="btn o s" href="/admin/quotes/new?lead=${l.id}">কোটেশন বানান</a>
       <span class="pill">${KIND_BN[l.kind] || esc(l.kind)}</span><span class="k">#${l.id} · ${esc(l.created_at)} UTC · ${l.emailed ? 'ইমেইল গেছে' : 'ইমেইল যায়নি'}</span></div>
     ${l.product_name ? `<div><span class="k">পণ্য:</span> <a href="/p/${esc(l.product_slug)}/" target="_blank" rel="noopener">${esc(l.product_name)}</a></div>` : ''}
     ${l.area ? `<div><span class="k">এলাকা:</span> ${esc(l.area)}</div>` : ''}
