@@ -4,7 +4,7 @@
 // empty or D1 is unreachable, falls through to the static build in dist/.
 import { createSite } from '../src/render.mjs';
 
-const CATALOGUE = /^(\/en)?(\/|\/furniture\/([a-z0-9-]+\/)?|\/p\/[a-z0-9-]+\/)$/;
+const CATALOGUE = /^(\/en)?(\/|\/sale\/|\/furniture\/([a-z0-9-]+\/)?|\/p\/[a-z0-9-]+\/)$/;
 
 let siteData = null; // { assetV, cfg, slides } written by build.mjs, cached per isolate
 

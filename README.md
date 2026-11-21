@@ -56,3 +56,10 @@ All in `/admin`, code in `src/admin-books.mjs`. The tables (`txns`, `quotes`,
 - **হিসাব** (`/admin/books`, super admin only): add income and expenses by category and
   method (cash, bKash, Nagad, bank, card); monthly totals, profit, category and
   method breakdown, a year table, a printable report and a CSV export for Excel.
+
+## Clearance sale
+
+Tick "পুরাতন শোরুমের সেলে দেখান" on a product in `/admin/products` (put the original
+price in "আগের দাম" and the sale price in "দাম"). Sale products get a −% badge,
+show on `/sale/` and in a yellow strip on the home page, and a "সেল" link appears in
+the menu. With no sale products all of that disappears by itself.

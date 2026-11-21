@@ -394,12 +394,13 @@ async function productList(env, url, user) {
   const all = await allProducts(env);
   const q = (url.searchParams.get('q') || '').trim().toLowerCase();
   const cat = url.searchParams.get('cat') || '';
-  const list = all.filter((p) => (!cat || p.cat === cat) && (!q || [p.model, p.code, p.slug, pName(p), catBySlug[p.cat]?.en].join(' ').toLowerCase().includes(q)));
+  const saleOnly = url.searchParams.get('sale') === '1';
+  const list = all.filter((p) => (!saleOnly || p.sale) && (!cat || p.cat === cat) && (!q || [p.model, p.code, p.slug, pName(p), catBySlug[p.cat]?.en].join(' ').toLowerCase().includes(q)));
   const back = url.pathname + url.search;
   const recent = (await env.DB.prepare('SELECT * FROM product_log ORDER BY id DESC LIMIT 15').all()).results;
   const actBn = { add: 'নতুন যোগ', edit: 'এডিট', price: 'দাম বদল', hide: 'লুকানো', show: 'দেখানো', delete: 'মুছে ফেলা' };
   return page('প্রোডাক্ট', `<h1>প্রোডাক্ট (${all.length})</h1>
-  <div class="bar"><a class="btn y" href="/admin/products/new">+ নতুন প্রোডাক্ট</a>
+  <div class="bar"><a class="btn y" href="/admin/products/new">+ নতুন প্রোডাক্ট</a><a class="btn ${saleOnly ? '' : 'o'} s" href="/admin/products${saleOnly ? '' : '?sale=1'}">সেলের প্রোডাক্ট (${all.filter((p) => p.sale).length})</a>
     <form class="inline" method="get" action="/admin/products">
       <select class="field" name="cat" style="width:auto"><option value="">সব ক্যাটাগরি</option>${CATEGORIES.map((c) => `<option value="${c.slug}"${c.slug === cat ? ' selected' : ''}>${c.bn}</option>`).join('')}</select>
       <input class="field" name="q" value="${esc(q)}" placeholder="মডেল বা কোড খুঁজুন" style="width:180px"><button class="btn s">খুঁজুন</button></form></div>
@@ -407,7 +408,7 @@ async function productList(env, url, user) {
   <table><thead><tr><th>ছবি</th><th>প্রোডাক্ট</th><th class="hide-sm">কোড</th><th>দাম (৳)</th><th>অবস্থা</th><th></th></tr></thead><tbody>
   ${list.map((p) => `<tr${p._hidden ? ' class="off"' : ''}>
     <td><img src="${esc(p.images?.[0]?.sm || '')}" alt="" loading="lazy"></td>
-    <td><a href="/admin/products/edit/${esc(p.slug)}"><b>${esc(pName(p))}</b></a><br><span class="muted">${esc(p.size || '')}</span></td>
+    <td><a href="/admin/products/edit/${esc(p.slug)}"><b>${esc(pName(p))}</b></a>${p.sale ? ' <span class="pill" style="background:#FECC2F;color:#111">সেল</span>' : ''}<br><span class="muted">${esc(p.size || '')}</span></td>
     <td class="hide-sm">${esc(p.code)}</td>
     <td><form class="inline" method="post" action="/admin/products/price"><input type="hidden" name="slug" value="${esc(p.slug)}"><input type="hidden" name="back" value="${esc(back)}">
       <input class="field price-in" name="price" inputmode="numeric" value="${esc(p.price)}" aria-label="দাম"><button class="btn s">সেভ</button></form></td>
@@ -437,6 +438,8 @@ function productForm(url, user, p) {
       <label>মাপ<input class="field" name="size" value="${esc(p.size)}" maxlength="120" placeholder='যেমন L-36" x W-22" x H-78"'></label>
       <label>কাঠ<input class="field" name="wood" value="${esc(p.wood)}" maxlength="40" list="woods"><datalist id="woods"><option value="Pine"><option value="Mahogany"><option value="Teak"><option value="Gamari"><option value="Shil Koroi"></datalist></label>
       <label>পালিশ<span class="checks">${Object.entries(POLISH).map(([k, v]) => `<label><input type="checkbox" name="polishes" value="${esc(k)}"${(p.polishes || []).includes(k) ? ' checked' : ''}> ${v.bn}</label>`).join('')}</span></label>
+      <label>ক্লিয়ারেন্স সেল<span class="checks"><label><input type="checkbox" name="sale" value="1"${p.sale ? ' checked' : ''}> পুরাতন শোরুমের সেলে দেখান</label></span><small class="muted">টিক দিলে "সেল" পাতায় আর হোমপেজে দেখাবে। আগের দাম ঘরে আসল দাম দিন, দাম ঘরে সেলের দাম, তাহলে কত % ছাড় সেটা নিজে থেকে দেখাবে।</small></label>
+      <label>সেলের নোট (ঐচ্ছিক)<input class="field" name="sale_note" value="${esc(p.sale_note || '')}" maxlength="140" placeholder="যেমন: শোরুমে ডিসপ্লে করা, সামান্য দাগ আছে"></label>
       ${isNew ? '' : `<label>সাইটে<span class="checks"><label><input type="checkbox" name="hidden" value="1"${p._hidden ? ' checked' : ''}> লুকিয়ে রাখুন</label></span></label>`}
     </div>
     <h2>ছবি</h2>
@@ -542,7 +545,10 @@ async function saveProduct(env, user, f) {
     wood: String(f.get('wood') || '').trim().slice(0, 40) || 'Pine',
     polishes: polishes.length ? polishes : Object.keys(POLISH),
     images,
+    sale: !!f.get('sale'),
+    sale_note: String(f.get('sale_note') || '').trim().slice(0, 140) || null,
   };
+  if (!p.sale) { delete p.sale; delete p.sale_note; }
   delete p._hidden;
   const hidden = isNew ? 0 : (f.get('hidden') ? 1 : 0);
   if (isNew) {
@@ -557,6 +563,7 @@ async function saveProduct(env, user, f) {
   if (old.price !== p.price) changes.push(`দাম ${old.price} → ${p.price}`);
   for (const [k, label] of [['model', 'মডেল'], ['code', 'কোড'], ['cat', 'ক্যাটাগরি'], ['size', 'মাপ'], ['wood', 'কাঠ']]) if ((old[k] || '') !== (p[k] || '')) changes.push(label);
   if (JSON.stringify(old.images) !== JSON.stringify(p.images)) changes.push('ছবি');
+  if (!!old.sale !== !!p.sale) changes.push(p.sale ? 'সেলে দেওয়া' : 'সেল থেকে সরানো');
   if (old._hidden !== !!hidden) changes.push(hidden ? 'লুকানো' : 'দেখানো');
   await env.DB.batch([
     env.DB.prepare("UPDATE products SET data = ?, hidden = ?, updated_at = datetime('now'), updated_by = ? WHERE slug = ?").bind(JSON.stringify(p), hidden, user.username, slug),

@@ -31,6 +31,14 @@ const url = (lang, p) => prefix(lang) + p;
 const wa = (text) => `https://wa.me/${cfg.whatsapp}?text=${encodeURIComponent(text)}`;
 const pName = (lang, p) => `${catBySlug[p.cat].one[lang]} ${num(lang, p.model)}`;
 const productsIn = (cat) => products.filter((p) => p.cat === cat);
+// Clearance sale: products marked "sale" in /admin (old showroom pieces).
+const saleItems = () => products.filter((p) => p.sale);
+const offPct = (p) => (p.regular_price > p.price ? Math.round((1 - p.price / p.regular_price) * 100) : 0);
+const maxOff = () => Math.max(0, ...saleItems().map(offPct));
+const SALE = {
+  bn: { nav: 'সেল', title: 'পুরাতন শোরুমের ফার্নিচার ক্লিয়ারেন্স সেল', badge: 'ক্লিয়ারেন্স সেল', upTo: (n) => `${bnNum(n)}% পর্যন্ত ছাড়`, sub: 'আমাদের পুরাতন শোরুমের ডিসপ্লে ফার্নিচার এখন বিশেষ ছাড়ে। প্রতিটা মাত্র একটা করে আছে, আগে এলে আগে পাবেন।', see: 'সেলের সব ফার্নিচার দেখুন', none: 'এই মুহূর্তে কোনো সেল চলছে না। নতুন ফার্নিচার দেখুন।', rules: ['প্রতিটা ডিজাইন মাত্র ১টা করে, যেমন আছে তেমন অবস্থায়।', 'শোরুমে এসে নিজে দেখে নিতে পারেন।', 'আগে অগ্রিম দিলে আগে বুকিং।', 'সেলের দাম শুধু স্টক থাকা পর্যন্ত।'], wa: (name, code, u) => `আসসালামু আলাইকুম, ক্লিয়ারেন্স সেলের ${name} (কোড: ${code}) এখনো আছে কি?\n${u}`, waAll: 'আসসালামু আলাইকুম, পুরাতন শোরুমের ক্লিয়ারেন্স সেল সম্পর্কে জানতে চাই।', off: 'ছাড়', left: 'মাত্র ১টা' },
+  en: { nav: 'Sale', title: 'Old showroom clearance sale', badge: 'Clearance sale', upTo: (n) => `Up to ${n}% off`, sub: 'Display furniture from our old showroom at special prices. Only one of each, first come first served.', see: 'See all sale furniture', none: 'No sale is running right now. See our furniture.', rules: ['One piece of each design, sold as is.', 'Come to the showroom and see it yourself.', 'First to pay the advance gets it.', 'Sale prices while stock lasts.'], wa: (name, code, u) => `Hello, is the clearance sale ${name} (code: ${code}) still available?\n${u}`, waAll: 'Hello, I would like to know about the old showroom clearance sale.', off: 'off', left: 'Only 1' },
+};
 
 const ICON = {
   fb: '<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M14 8V6.2c0-.8.2-1.2 1.4-1.2H17V2h-2.6C11.6 2 10.6 3.4 10.6 5.9V8H8.5v3h2.1v11H14V11h2.6l.4-3z"/></svg>',
@@ -103,6 +111,7 @@ ${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld)}</script
       <img class="brand-logo" src="/img/logo-stack.svg" alt="Wood Metal, handmade furniture" width="290" height="346">
     </a>
     <nav class="main-nav" aria-label="${lang === 'bn' ? 'প্রধান মেনু' : 'Main'}">
+      ${saleItems().length ? `<a class="nav-sale" href="${url(lang, '/sale/')}"${pathname === '/sale/' ? ' aria-current="page"' : ''}>${SALE[lang].nav}</a>` : ''}
       ${navItem('/furniture/', t.nav.shop)}
       ${navItem('/custom-order/', t.nav.custom)}
       ${navItem('/about/', t.nav.story)}
@@ -160,15 +169,16 @@ function productCard(lang, p) {
   const img = p.images[0];
   const link = url(lang, `/p/${p.slug}/`);
   const pageUrl = cfg.siteUrl + link;
-  return `<article class="card" data-cat="${p.cat}" data-q="${esc([pName('en', p), pName('bn', p), p.code, p.model].join(' ').toLowerCase())}">
-  <a class="card-img" href="${link}" tabindex="-1" aria-hidden="true"><img src="${img.sm}" alt="" loading="lazy" decoding="async" width="480" height="${Math.round(480 * img.h / img.w)}"></a>
+  const off = p.sale ? offPct(p) : 0;
+  return `<article class="card${p.sale ? ' on-sale' : ''}" data-cat="${p.cat}" data-q="${esc([pName('en', p), pName('bn', p), p.code, p.model].join(' ').toLowerCase())}">
+  <a class="card-img" href="${link}" tabindex="-1" aria-hidden="true">${p.sale ? `<span class="sale-tag">${off ? `−${num(lang, off)}%` : SALE[lang].nav}</span>` : ''}<img src="${img.sm}" alt="" loading="lazy" decoding="async" width="480" height="${Math.round(480 * img.h / img.w)}"></a>
   <div class="card-body">
     <span class="eyebrow">${catBySlug[p.cat].one[lang]}</span>
     <h3 class="card-title"><a href="${link}">${esc(name)}</a></h3>
     ${p.size ? `<span class="card-spec">${esc(p.size)} · ${WOOD[p.wood]?.[lang] ?? p.wood}</span>` : ''}
-    <span class="card-price">${money(lang, p.price)}</span>
+    <span class="card-price">${money(lang, p.price)}${p.sale && p.regular_price ? ` <s>${money(lang, p.regular_price)}</s>` : ''}</span>
     <div class="card-actions">
-      <a class="btn btn-wa btn-sm" href="${wa(t.waProduct(name, p.code, pageUrl))}">${ICON.wa}<span>${t.askPrice}</span></a>
+      <a class="btn btn-wa btn-sm" href="${wa(p.sale ? SALE[lang].wa(name, p.code, pageUrl) : t.waProduct(name, p.code, pageUrl))}">${ICON.wa}<span>${t.askPrice}</span></a>
       <a class="btn btn-outline btn-sm" href="${link}">${t.details}</a>
     </div>
   </div>
@@ -314,6 +324,7 @@ function homePage(lang) {
   <button class="slide-nav next" type="button" aria-label="${lang === 'bn' ? 'পরের ছবি' : 'Next slide'}"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button>
   <div class="slide-dots">${SLIDES.map((_, i) => `<button type="button" aria-label="${num(lang, i + 1)}"${i === 0 ? ' aria-current="true"' : ''}></button>`).join('')}</div>
 </section>
+${saleItems().length ? saleStrip(lang) : ''}
 <section class="trust">
   <div class="wrap trust-grid">
     ${t.trust.map((x) => `<div class="trust-item"><strong>${x.h}</strong><span>${x.p}</span></div>`).join('')}
@@ -358,6 +369,37 @@ ${storySection(lang)}
     sameAs: Object.values(cfg.social),
   };
   return layout({ lang, pathname: '/', body, jsonld });
+}
+
+function saleStrip(lang) {
+  const S = SALE[lang], list = saleItems(), m = maxOff();
+  return `<section class="sale-strip">
+  <div class="wrap">
+    <div class="sale-head"><div><span class="sale-kicker">${S.badge}${m ? ` · ${S.upTo(m)}` : ''}</span><h2>${S.title}</h2><p>${S.sub}</p></div>
+      <a class="btn btn-dark btn-lg" href="${url(lang, '/sale/')}">${S.see} (${num(lang, list.length)}) →</a></div>
+    <div class="product-grid">${list.slice(0, 4).map((p) => productCard(lang, p)).join('')}</div>
+  </div>
+</section>`;
+}
+
+function salePage(lang) {
+  const t = T[lang], S = SALE[lang], list = saleItems(), m = maxOff();
+  const body = `
+${breadcrumbs(lang, [['/', t.home], ['/sale/', S.nav]])}
+<section class="sale-hero">
+  <div class="wrap">
+    <span class="sale-kicker">${S.badge}${m ? ` · ${S.upTo(m)}` : ''}</span>
+    <h1>${S.title}</h1>
+    <p class="lead">${list.length ? S.sub : S.none}</p>
+    ${list.length ? `<ul class="sale-rules">${S.rules.map((r) => `<li>${r}</li>`).join('')}</ul>` : ''}
+    <div class="btn-row"><a class="btn btn-wa btn-lg" href="${wa(S.waAll)}">${ICON.wa}<span>WhatsApp</span></a><a class="btn btn-light btn-lg" href="tel:${cfg.phones[0].tel}">${ICON.phone}<span>${t.callBtn}</span></a></div>
+  </div>
+</section>
+<section class="wrap section-tight">
+  ${list.length ? `<div class="product-grid">${list.map((p) => productCard(lang, p)).join('')}</div>` : `<div class="btn-row center"><a class="btn btn-dark btn-lg" href="${url(lang, '/furniture/')}">${t.ctaBrowse}</a></div>`}
+</section>`;
+  const first = list[0];
+  return layout({ lang, pathname: '/sale/', title: `${S.title}${m ? ` · ${S.upTo(m)}` : ''}`, description: S.sub, body, image: first ? first.images[0].src : undefined, imageMeta: first ? { w: first.images[0].w, h: first.images[0].h, alt: S.title } : undefined, noindex: !list.length });
 }
 
 function listingPage(lang, cat) {
@@ -408,6 +450,7 @@ ${breadcrumbs(lang, [['/', t.home], [`/furniture/${c.slug}/`, c[lang]], [pathnam
     <span class="eyebrow">${t.handmade}</span>
     <h1>${esc(name)}</h1>
     <p class="lead">${c.blurb[lang]}</p>
+    ${p.sale ? `<a class="sale-note" href="${url(lang, '/sale/')}"><b>${SALE[lang].badge}${offPct(p) ? ` · −${num(lang, offPct(p))}%` : ''}</b><span>${p.sale_note ? esc(p.sale_note) : SALE[lang].rules[0]}</span></a>` : ''}
     <div class="price-box">
       <span class="price">${money(lang, p.price)}</span>
       ${p.regular_price ? `<s>${money(lang, p.regular_price)}</s>` : ''}
@@ -527,6 +570,7 @@ function notFoundPage(lang) {
       for (const c of CATEGORIES) out.push(url(lang, `/furniture/${c.slug}/`));
       for (const p of products) out.push(url(lang, `/p/${p.slug}/`));
       out.push(url(lang, '/custom-order/'), url(lang, '/about/'), url(lang, '/contact/'));
+      if (saleItems().length) out.push(url(lang, '/sale/'));
     }
     return out;
   }
@@ -544,6 +588,7 @@ function notFoundPage(lang) {
     m = p.match(/^\/p\/([a-z0-9-]+)\/$/);
     if (m) return bySlug[m[1]] ? productPage(lang, bySlug[m[1]]) : null;
     if (p === '/custom-order/') return customPage(lang);
+    if (p === '/sale/') return salePage(lang);
     if (p === '/about/') return aboutPage(lang);
     if (p === '/contact/') return contactPage(lang);
     return null;

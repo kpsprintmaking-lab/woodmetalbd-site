@@ -366,3 +366,20 @@ textarea.field { resize: vertical; }
   .slide-cap .btn-lg { padding: 12px 18px; font-size: 15px; }
 }
 @media (prefers-reduced-motion: reduce) { .slide, .slide.on { transition: none; } }
+
+/* Clearance sale */
+.nav-sale { background: var(--yellow); color: var(--black) !important; border-radius: 999px; padding: 4px 14px !important; font-weight: 700; }
+.card-img { position: relative; }
+.sale-tag { position: absolute; top: 10px; left: 10px; z-index: 1; background: var(--black); color: var(--yellow); font-weight: 700; font-size: 14px; padding: 3px 10px; border-radius: 999px; }
+.card-price s, .price-box s { color: var(--grey); font-weight: 400; font-size: .85em; }
+.sale-strip { background: var(--yellow); padding: 40px 0; }
+.sale-strip .card { border-color: transparent; }
+.sale-head { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px 32px; margin-bottom: 22px; }
+.sale-head h2 { margin: 4px 0 6px; }
+.sale-head p { margin: 0; max-width: 60ch; }
+.sale-kicker { display: inline-block; background: var(--black); color: var(--yellow); font-weight: 700; padding: 4px 14px; border-radius: 999px; font-size: 15px; }
+.sale-hero { background: var(--yellow); padding: 36px 0 32px; }
+.sale-hero h1 { margin: 10px 0 8px; }
+.sale-rules { margin: 14px 0 18px; padding-left: 20px; display: grid; gap: 4px; font-weight: 600; }
+.sale-note { display: flex; flex-direction: column; gap: 2px; background: var(--yellow); color: var(--black); text-decoration: none; border-radius: var(--radius); padding: 10px 14px; margin: 6px 0 10px; }
+.sale-note b { font-size: 16px; }
