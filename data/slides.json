@@ -1,0 +1,119 @@
+{
+  "_note": "Home page slide banner. To change a slide: put a photo in public/img/ (a big one and a -sm one about 640px wide), then edit the image, link and text here. Order here is the order on the site.",
+  "slides": [
+    {
+      "img": "/img/showroom/china-city-4.webp",
+      "sm": "/img/showroom/china-city-4-sm.webp",
+      "w": 1220,
+      "h": 1364,
+      "href": "/furniture/",
+      "bn": {
+        "title": "আপনার ঘরের মাপে, কারিগরের হাতে গড়া আসবাব",
+        "text": "২০০০ সাল থেকে ঢাকায় আমাদের নিজের ওয়ার্কশপে তৈরি।",
+        "cta": "সব ফার্নিচার দেখুন",
+        "alt": "চায়না সিটিতে উড মেটালের নতুন শোরুম"
+      },
+      "en": {
+        "title": "Furniture made by hand, to fit your home",
+        "text": "Built in our own Dhaka workshop since 2000.",
+        "cta": "See all furniture",
+        "alt": "The new Wood Metal showroom at China City"
+      }
+    },
+    {
+      "img": "/img/p/sofa-547-x5.webp",
+      "sm": "/img/p/sofa-547-x5-sm.webp",
+      "w": 1000,
+      "h": 667,
+      "href": "/furniture/sofas/",
+      "bn": {
+        "title": "শক্ত কাঠের সোফা, পছন্দের কাপড়ে",
+        "text": "ডিজাইন, পালিশ আর কুশনের কাপড় আপনি বেছে নিন।",
+        "cta": "সোফা দেখুন",
+        "alt": "কাঠের সোফা সেট"
+      },
+      "en": {
+        "title": "Solid wood sofas, in the fabric you choose",
+        "text": "You pick the design, the polish and the cushion fabric.",
+        "cta": "See sofas",
+        "alt": "A wooden sofa set"
+      }
+    },
+    {
+      "img": "/img/p/dining-set-46-b-x4.webp",
+      "sm": "/img/p/dining-set-46-b-x4-sm.webp",
+      "w": 1000,
+      "h": 667,
+      "href": "/furniture/dining-sets/",
+      "bn": {
+        "title": "পুরো পরিবারের জন্য ডাইনিং সেট",
+        "text": "চেয়ারের সংখ্যা আর টেবিলের মাপ আপনার ঘর অনুযায়ী।",
+        "cta": "ডাইনিং দেখুন",
+        "alt": "কাঠের ডাইনিং টেবিল আর চেয়ার"
+      },
+      "en": {
+        "title": "Dining sets for the whole family",
+        "text": "As many chairs as you need, with the table sized to your room.",
+        "cta": "See dining sets",
+        "alt": "A wooden dining table and chairs"
+      }
+    },
+    {
+      "img": "/img/p/divan-637-x3.webp",
+      "sm": "/img/p/divan-637-x3-sm.webp",
+      "w": 1000,
+      "h": 667,
+      "href": "/furniture/divans/",
+      "bn": {
+        "title": "ডিভান, ঘরের এক কোণে আরাম",
+        "text": "বসার ঘর বা বারান্দার জন্য হাতে গড়া ডিভান।",
+        "cta": "ডিভান দেখুন",
+        "alt": "কাঠের ডিভান"
+      },
+      "en": {
+        "title": "Divans for a quiet corner",
+        "text": "Handmade divans for the living room or the veranda.",
+        "cta": "See divans",
+        "alt": "A wooden divan"
+      }
+    },
+    {
+      "img": "/img/p/bookshelf-1022-x4.webp",
+      "sm": "/img/p/bookshelf-1022-x4-sm.webp",
+      "w": 1000,
+      "h": 667,
+      "href": "/furniture/bookshelves/",
+      "bn": {
+        "title": "টিভি আর বইয়ের শেলফ, দেয়ালের মাপে",
+        "text": "আপনার দেয়ালের মাপ দিন, আমরা পুরো ইউনিট বানিয়ে দেব।",
+        "cta": "শেলফ দেখুন",
+        "alt": "কাঠের টিভি ও বইয়ের শেলফ"
+      },
+      "en": {
+        "title": "TV and bookshelves, made to your wall",
+        "text": "Give us your wall size and we will build the whole unit.",
+        "cta": "See shelves",
+        "alt": "A wooden TV and bookshelf unit"
+      }
+    },
+    {
+      "img": "/img/showroom/china-city-3.webp",
+      "sm": "/img/showroom/china-city-3-sm.webp",
+      "w": 1220,
+      "h": 1364,
+      "href": "/custom-order/",
+      "bn": {
+        "title": "নিজের ডিজাইন আছে? আমরা বানিয়ে দেব",
+        "text": "ছবি আর মাপ পাঠান, আমরা দাম জানিয়ে দেব।",
+        "cta": "কাস্টম অর্ডার দিন",
+        "alt": "চায়না সিটির নতুন শোরুমের ভেতরে"
+      },
+      "en": {
+        "title": "Have your own design? We will build it",
+        "text": "Send a photo and your measurements and we will send you a price.",
+        "cta": "Order custom furniture",
+        "alt": "Inside the new showroom at China City"
+      }
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "woodmetalbd-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "dev": "node build.mjs && npx wrangler pages dev",
+    "db:init": "npx wrangler d1 execute woodmetal-leads --remote --file migrations/0001_init.sql"
+  }
+}
