@@ -33,11 +33,9 @@ const pName = (lang, p) => `${catBySlug[p.cat].one[lang]} ${num(lang, p.model)}`
 const productsIn = (cat) => products.filter((p) => p.cat === cat);
 // Clearance sale: products marked "sale" in /admin (old showroom pieces).
 const saleItems = () => products.filter((p) => p.sale);
-const offPct = (p) => (p.regular_price > p.price ? Math.round((1 - p.price / p.regular_price) * 100) : 0);
-const maxOff = () => Math.max(0, ...saleItems().map(offPct));
 const SALE = {
-  bn: { nav: 'সেল', title: 'পুরাতন শোরুমের ফার্নিচার ক্লিয়ারেন্স সেল', badge: 'ক্লিয়ারেন্স সেল', upTo: (n) => `${bnNum(n)}% পর্যন্ত ছাড়`, sub: 'আমাদের পুরাতন শোরুমের ডিসপ্লে ফার্নিচার এখন বিশেষ ছাড়ে। প্রতিটা মাত্র একটা করে আছে, আগে এলে আগে পাবেন।', see: 'সেলের সব ফার্নিচার দেখুন', none: 'এই মুহূর্তে কোনো সেল চলছে না। নতুন ফার্নিচার দেখুন।', rules: ['প্রতিটা ডিজাইন মাত্র ১টা করে, যেমন আছে তেমন অবস্থায়।', 'শোরুমে এসে নিজে দেখে নিতে পারেন।', 'আগে অগ্রিম দিলে আগে বুকিং।', 'সেলের দাম শুধু স্টক থাকা পর্যন্ত।'], wa: (name, code, u) => `আসসালামু আলাইকুম, ক্লিয়ারেন্স সেলের ${name} (কোড: ${code}) এখনো আছে কি?\n${u}`, waAll: 'আসসালামু আলাইকুম, পুরাতন শোরুমের ক্লিয়ারেন্স সেল সম্পর্কে জানতে চাই।', off: 'ছাড়', left: 'মাত্র ১টা' },
-  en: { nav: 'Sale', title: 'Old showroom clearance sale', badge: 'Clearance sale', upTo: (n) => `Up to ${n}% off`, sub: 'Display furniture from our old showroom at special prices. Only one of each, first come first served.', see: 'See all sale furniture', none: 'No sale is running right now. See our furniture.', rules: ['One piece of each design, sold as is.', 'Come to the showroom and see it yourself.', 'First to pay the advance gets it.', 'Sale prices while stock lasts.'], wa: (name, code, u) => `Hello, is the clearance sale ${name} (code: ${code}) still available?\n${u}`, waAll: 'Hello, I would like to know about the old showroom clearance sale.', off: 'off', left: 'Only 1' },
+  bn: { nav: 'সেল', title: 'পুরাতন শোরুমের ফার্নিচার ক্লিয়ারেন্স সেল', badge: 'ক্লিয়ারেন্স সেল', deal: 'আকর্ষণীয় মূল্য ছাড়', sub: 'আমাদের পুরাতন শোরুমের ডিসপ্লে ফার্নিচার এখন বিশেষ ছাড়ে। প্রতিটা মাত্র একটা করে আছে, আগে এলে আগে পাবেন।', see: 'সেলের সব ফার্নিচার দেখুন', none: 'এই মুহূর্তে কোনো সেল চলছে না। নতুন ফার্নিচার দেখুন।', rules: ['প্রতিটা ডিজাইন মাত্র ১টা করে, যেমন আছে তেমন অবস্থায়।', 'শোরুমে এসে নিজে দেখে নিতে পারেন।', 'আগে অগ্রিম দিলে আগে বুকিং।', 'সেলের দাম শুধু স্টক থাকা পর্যন্ত।'], wa: (name, code, u) => `আসসালামু আলাইকুম, ক্লিয়ারেন্স সেলের ${name} (কোড: ${code}) এখনো আছে কি?\n${u}`, waAll: 'আসসালামু আলাইকুম, পুরাতন শোরুমের ক্লিয়ারেন্স সেল সম্পর্কে জানতে চাই।', off: 'ছাড়', left: 'মাত্র ১টা' },
+  en: { nav: 'Sale', title: 'Old showroom clearance sale', badge: 'Clearance sale', deal: 'Special discount prices', sub: 'Display furniture from our old showroom at special prices. Only one of each, first come first served.', see: 'See all sale furniture', none: 'No sale is running right now. See our furniture.', rules: ['One piece of each design, sold as is.', 'Come to the showroom and see it yourself.', 'First to pay the advance gets it.', 'Sale prices while stock lasts.'], wa: (name, code, u) => `Hello, is the clearance sale ${name} (code: ${code}) still available?\n${u}`, waAll: 'Hello, I would like to know about the old showroom clearance sale.', off: 'off', left: 'Only 1' },
 };
 
 const ICON = {
@@ -169,9 +167,8 @@ function productCard(lang, p) {
   const img = p.images[0];
   const link = url(lang, `/p/${p.slug}/`);
   const pageUrl = cfg.siteUrl + link;
-  const off = p.sale ? offPct(p) : 0;
   return `<article class="card${p.sale ? ' on-sale' : ''}" data-cat="${p.cat}" data-q="${esc([pName('en', p), pName('bn', p), p.code, p.model].join(' ').toLowerCase())}">
-  <a class="card-img" href="${link}" tabindex="-1" aria-hidden="true">${p.sale ? `<span class="sale-tag">${off ? `−${num(lang, off)}%` : SALE[lang].nav}</span>` : ''}<img src="${img.sm}" alt="" loading="lazy" decoding="async" width="480" height="${Math.round(480 * img.h / img.w)}"></a>
+  <a class="card-img" href="${link}" tabindex="-1" aria-hidden="true">${p.sale ? `<span class="sale-tag">${SALE[lang].nav}</span>` : ''}<img src="${img.sm}" alt="" loading="lazy" decoding="async" width="480" height="${Math.round(480 * img.h / img.w)}"></a>
   <div class="card-body">
     <span class="eyebrow">${catBySlug[p.cat].one[lang]}</span>
     <h3 class="card-title"><a href="${link}">${esc(name)}</a></h3>
@@ -372,10 +369,10 @@ ${storySection(lang)}
 }
 
 function saleStrip(lang) {
-  const S = SALE[lang], list = saleItems(), m = maxOff();
+  const S = SALE[lang], list = saleItems();
   return `<section class="sale-strip">
   <div class="wrap">
-    <div class="sale-head"><div><span class="sale-kicker">${S.badge}${m ? ` · ${S.upTo(m)}` : ''}</span><h2>${S.title}</h2><p>${S.sub}</p></div>
+    <div class="sale-head"><div><span class="sale-kicker">${S.badge} · ${S.deal}</span><h2>${S.title}</h2><p>${S.sub}</p></div>
       <a class="btn btn-dark btn-lg" href="${url(lang, '/sale/')}">${S.see} (${num(lang, list.length)}) →</a></div>
     <div class="product-grid">${list.slice(0, 4).map((p) => productCard(lang, p)).join('')}</div>
   </div>
@@ -383,12 +380,12 @@ function saleStrip(lang) {
 }
 
 function salePage(lang) {
-  const t = T[lang], S = SALE[lang], list = saleItems(), m = maxOff();
+  const t = T[lang], S = SALE[lang], list = saleItems();
   const body = `
 ${breadcrumbs(lang, [['/', t.home], ['/sale/', S.nav]])}
 <section class="sale-hero">
   <div class="wrap">
-    <span class="sale-kicker">${S.badge}${m ? ` · ${S.upTo(m)}` : ''}</span>
+    <span class="sale-kicker">${S.badge} · ${S.deal}</span>
     <h1>${S.title}</h1>
     <p class="lead">${list.length ? S.sub : S.none}</p>
     ${list.length ? `<ul class="sale-rules">${S.rules.map((r) => `<li>${r}</li>`).join('')}</ul>` : ''}
@@ -399,7 +396,7 @@ ${breadcrumbs(lang, [['/', t.home], ['/sale/', S.nav]])}
   ${list.length ? `<div class="product-grid">${list.map((p) => productCard(lang, p)).join('')}</div>` : `<div class="btn-row center"><a class="btn btn-dark btn-lg" href="${url(lang, '/furniture/')}">${t.ctaBrowse}</a></div>`}
 </section>`;
   const first = list[0];
-  return layout({ lang, pathname: '/sale/', title: `${S.title}${m ? ` · ${S.upTo(m)}` : ''}`, description: S.sub, body, image: first ? first.images[0].src : undefined, imageMeta: first ? { w: first.images[0].w, h: first.images[0].h, alt: S.title } : undefined, noindex: !list.length });
+  return layout({ lang, pathname: '/sale/', title: `${S.title} · ${S.deal}`, description: S.sub, body, image: first ? first.images[0].src : undefined, imageMeta: first ? { w: first.images[0].w, h: first.images[0].h, alt: S.title } : undefined, noindex: !list.length });
 }
 
 function listingPage(lang, cat) {
@@ -450,7 +447,7 @@ ${breadcrumbs(lang, [['/', t.home], [`/furniture/${c.slug}/`, c[lang]], [pathnam
     <span class="eyebrow">${t.handmade}</span>
     <h1>${esc(name)}</h1>
     <p class="lead">${c.blurb[lang]}</p>
-    ${p.sale ? `<a class="sale-note" href="${url(lang, '/sale/')}"><b>${SALE[lang].badge}${offPct(p) ? ` · −${num(lang, offPct(p))}%` : ''}</b><span>${p.sale_note ? esc(p.sale_note) : SALE[lang].rules[0]}</span></a>` : ''}
+    ${p.sale ? `<a class="sale-note" href="${url(lang, '/sale/')}"><b>${SALE[lang].badge} · ${SALE[lang].deal}</b><span>${p.sale_note ? esc(p.sale_note) : SALE[lang].rules[0]}</span></a>` : ''}
     <div class="price-box">
       <span class="price">${money(lang, p.price)}</span>
       ${p.regular_price ? `<s>${money(lang, p.regular_price)}</s>` : ''}

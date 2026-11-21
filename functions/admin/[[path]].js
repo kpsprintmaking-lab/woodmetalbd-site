@@ -438,7 +438,7 @@ function productForm(url, user, p) {
       <label>মাপ<input class="field" name="size" value="${esc(p.size)}" maxlength="120" placeholder='যেমন L-36" x W-22" x H-78"'></label>
       <label>কাঠ<input class="field" name="wood" value="${esc(p.wood)}" maxlength="40" list="woods"><datalist id="woods"><option value="Pine"><option value="Mahogany"><option value="Teak"><option value="Gamari"><option value="Shil Koroi"></datalist></label>
       <label>পালিশ<span class="checks">${Object.entries(POLISH).map(([k, v]) => `<label><input type="checkbox" name="polishes" value="${esc(k)}"${(p.polishes || []).includes(k) ? ' checked' : ''}> ${v.bn}</label>`).join('')}</span></label>
-      <label>ক্লিয়ারেন্স সেল<span class="checks"><label><input type="checkbox" name="sale" value="1"${p.sale ? ' checked' : ''}> পুরাতন শোরুমের সেলে দেখান</label></span><small class="muted">টিক দিলে "সেল" পাতায় আর হোমপেজে দেখাবে। আগের দাম ঘরে আসল দাম দিন, দাম ঘরে সেলের দাম, তাহলে কত % ছাড় সেটা নিজে থেকে দেখাবে।</small></label>
+      <label>ক্লিয়ারেন্স সেল<span class="checks"><label><input type="checkbox" name="sale" value="1"${p.sale ? ' checked' : ''}> পুরাতন শোরুমের সেলে দেখান</label></span><small class="muted">টিক দিলে "সেল" পাতায় আর হোমপেজে দেখাবে। আগের দাম ঘরে আসল দাম দিন, দাম ঘরে সেলের দাম; সাইটে আগের দাম কাটা অবস্থায় দেখাবে।</small></label>
       <label>সেলের নোট (ঐচ্ছিক)<input class="field" name="sale_note" value="${esc(p.sale_note || '')}" maxlength="140" placeholder="যেমন: শোরুমে ডিসপ্লে করা, সামান্য দাগ আছে"></label>
       ${isNew ? '' : `<label>সাইটে<span class="checks"><label><input type="checkbox" name="hidden" value="1"${p._hidden ? ' checked' : ''}> লুকিয়ে রাখুন</label></span></label>`}
     </div>

@@ -60,6 +60,6 @@ All in `/admin`, code in `src/admin-books.mjs`. The tables (`txns`, `quotes`,
 ## Clearance sale
 
 Tick "পুরাতন শোরুমের সেলে দেখান" on a product in `/admin/products` (put the original
-price in "আগের দাম" and the sale price in "দাম"). Sale products get a −% badge,
+price in "আগের দাম" and the sale price in "দাম"). Sale products get a "সেল" badge (no percentages, by request),
 show on `/sale/` and in a yellow strip on the home page, and a "সেল" link appears in
 the menu. With no sale products all of that disappears by itself.
