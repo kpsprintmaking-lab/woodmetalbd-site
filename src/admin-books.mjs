@@ -99,12 +99,46 @@ async function paidFor(env, quoteIds) {
 export async function books(ctx) {
   await ensure(ctx.env);
   if (ctx.section === 'books') {
-    if (ctx.user.role !== 'super') return ctx.page('অনুমতি নেই', '<p>আয়-ব্যয়ের হিসাব শুধু সুপার অ্যাডমিন দেখতে পারেন।</p>', { user: ctx.user });
-    return booksRoute(ctx);
+    return ctx.user.role === 'super' ? booksRoute(ctx) : staffExpenses(ctx);
   }
   if (ctx.section === 'quotes') return quotesRoute(ctx);
   if (ctx.section === 'receipts') return receiptsRoute(ctx);
   return null;
+}
+
+// ---------- staff: write expenses only, never see the books ----------
+async function staffExpenses(ctx) {
+  const { env, url, user, rest, post, redirect, withMsg } = ctx;
+  if (rest[0] === 'add' && post) {
+    const f = await ctx.request.formData();
+    const day = isDay(String(f.get('day'))) && String(f.get('day')) <= today() ? String(f.get('day')) : today();
+    const amount = int(f.get('amount'));
+    const category = OUT_CATS.includes(String(f.get('category'))) ? String(f.get('category')) : OUT_CATS[OUT_CATS.length - 1];
+    const method = METHODS[f.get('method')] ? String(f.get('method')) : 'cash';
+    if (amount <= 0) return redirect(withMsg('/admin/books', 'err', 'টাকার পরিমাণ লিখুন।'));
+    await env.DB.prepare('INSERT INTO txns (kind, day, amount, category, method, party, note, created_by) VALUES (?, ?, ?, ?, ?, ?, ?, ?)')
+      .bind('out', day, amount, category, method, str(f.get('party'), 120) || null, str(f.get('note'), 500) || null, user.username).run();
+    return redirect(withMsg('/admin/books', 'ok', `খরচ ${tk(amount)} লেখা হয়েছে।`));
+  }
+  if (rest.length) return redirect('/admin/books');
+  // Only what this person wrote in the last 7 days, so they can check for mistakes.
+  const mine = (await env.DB.prepare("SELECT * FROM txns WHERE created_by = ? AND kind = 'out' AND receipt_id IS NULL AND day >= ? ORDER BY day DESC, id DESC LIMIT 100").bind(user.username, addDays(today(), -7)).all()).results;
+  const body = `<h1>খরচ লিখুন</h1>
+  <form class="box" method="post" action="/admin/books/add">
+    <div class="grid">
+      <label>তারিখ<input class="field" type="date" name="day" value="${today()}" max="${today()}" required></label>
+      <label>টাকা<input class="field" name="amount" inputmode="numeric" placeholder="যেমন 2500" required></label>
+      <label>খরচের খাত<select class="field" name="category">${OUT_CATS.map((c) => `<option>${esc(c)}</option>`).join('')}</select></label>
+      <label>মাধ্যম<select class="field" name="method">${Object.entries(METHODS).map(([k, v]) => `<option value="${k}">${v}</option>`).join('')}</select></label>
+      <label>কাকে দিলেন<input class="field" name="party" placeholder="যেমন: করিম টিম্বার"></label>
+      <label>নোট<input class="field" name="note" placeholder="যেমন: সেগুন কাঠ ২০ সিএফটি"></label>
+    </div>
+    <button class="btn y" style="margin-top:12px">+ খরচ যোগ করুন</button>
+    <p class="muted" style="margin:8px 0 0">ভুল লিখলে সুপার অ্যাডমিনকে জানান, তিনি ঠিক করে দেবেন।</p>
+  </form>
+  <h2>গত ৭ দিনে আপনার লেখা খরচ</h2>
+  ${mine.length ? `<table><tr><th>তারিখ</th><th>বিবরণ</th><th class="hide-sm">মাধ্যম</th><th class="num">টাকা</th></tr>${mine.map((r) => `<tr><td>${fmtDay(r.day)}</td><td><b>${esc(r.category)}</b>${r.party ? ` · ${esc(r.party)}` : ''}${r.note ? `<div class="muted">${esc(r.note)}</div>` : ''}</td><td class="hide-sm">${METHODS[r.method] || esc(r.method)}</td><td class="num">${tk(r.amount)}</td></tr>`).join('')}</table>` : '<p class="muted">এখনো কিছু লেখেননি।</p>'}`;
+  return ctx.page('খরচ লিখুন', BOOK_CSS + body, { user, on: 'books', ...ctx.flashOf(url) });
 }
 
 // ---------- income & expense ----------

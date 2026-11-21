@@ -1,7 +1,8 @@
 // /admin : the shop's back office (Bangla).
 // Login with a username + password (users table). Two roles:
 //   super  everything, plus managing users and deleting products
-//   staff  leads, adding products, editing products and prices
+//   staff  leads, products and prices, quotations, money receipts, writing expenses
+//          (staff never see the income/expense totals or reports)
 //
 //   /admin/                    leads (filter ?status=new|contacted|done)
 //   /admin/login, /logout      sign in / out (cookie session, 30 days)
@@ -123,7 +124,7 @@ function page(title, body, { user, on, flash, err } = {}) {
     <a href="/admin/"${on === 'leads' ? ' class="on"' : ''}>লিড</a>
     <a href="/admin/quotes"${on === 'quotes' ? ' class="on"' : ''}>কোটেশন</a>
     <a href="/admin/receipts"${on === 'receipts' ? ' class="on"' : ''}>মানি রিসিট</a>
-    ${user.role === 'super' ? `<a href="/admin/books"${on === 'books' ? ' class="on"' : ''}>হিসাব</a>` : ''}
+    <a href="/admin/books"${on === 'books' ? ' class="on"' : ''}>${user.role === 'super' ? 'হিসাব' : 'খরচ লিখুন'}</a>
     <a href="/admin/products"${on === 'products' ? ' class="on"' : ''}>প্রোডাক্ট</a>
     ${user.role === 'super' ? `<a href="/admin/users"${on === 'users' ? ' class="on"' : ''}>ইউজার</a>` : ''}
     <a href="/admin/password"${on === 'password' ? ' class="on"' : ''}>পাসওয়ার্ড</a>
