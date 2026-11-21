@@ -40,3 +40,19 @@ Run `node build.mjs` and open `dist/`, or `npm run dev` for the full site with f
 - `functions/_middleware.js` renders the home, furniture lists, product pages and sitemap from D1 with the same templates as the static build (`src/render.mjs`). If the table is empty or D1 fails, the static pages are served.
 - Photos uploaded in `/admin` are stored in the D1 `media` table and served at `/media/<id>`.
 - Schema: `migrations/0003_users_products.sql`.
+
+## Quotations, money receipts and the books
+
+All in `/admin`, code in `src/admin-books.mjs`. The tables (`txns`, `quotes`,
+`receipts`, `counters`, see `migrations/0004_books.sql`) are created on first use.
+
+- **কোটেশন** (`/admin/quotes`): numbered `Q-2026-0001`; items with size, polish, qty
+  and rate, discount, delivery, advance %, terms. Print / save as PDF, send on
+  WhatsApp, and see how much is paid and due. A lead has a "কোটেশন বানান" button.
+- **মানি রিসিট** (`/admin/receipts`): numbered `MR-2026-0001`, amount in words, payment
+  method. Made from a quotation it shows order total, paid so far and due. Every
+  receipt also writes an income entry. Receipts are never deleted; the super admin
+  can void one, which takes it out of the books.
+- **হিসাব** (`/admin/books`, super admin only): add income and expenses by category and
+  method (cash, bKash, Nagad, bank, card); monthly totals, profit, category and
+  method breakdown, a year table, a printable report and a CSV export for Excel.
