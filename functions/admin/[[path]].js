@@ -32,6 +32,8 @@ const hex = (buf) => [...new Uint8Array(buf)].map((b) => b.toString(16).padStart
 const unhex = (h) => new Uint8Array(h.match(/../g).map((x) => parseInt(x, 16)));
 const sha256 = async (s) => hex(await crypto.subtle.digest('SHA-256', enc.encode(s)));
 const money = (n) => '৳ ' + Number(n).toLocaleString('en-IN');
+// Accepts Bangla digits and commas: "৫০,০০০" -> 50000
+const toNum = (v) => Math.round(Number(String(v ?? '').replace(/[০-৯]/g, (d) => '০১২৩৪৫৬৭৮৯'.indexOf(d)).replace(/[^0-9.]/g, '')));
 const slugify = (s) => String(s).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
 const pName = (p) => `${catBySlug[p.cat]?.one.bn ?? p.cat} ${p.model}`;
 function sameBytes(a, b) {
@@ -360,7 +362,7 @@ async function products(request, env, url, user, rest, post) {
 
   if (rest[0] === 'price') {
     const p = await getProduct(env, slug);
-    const price = Math.round(Number(String(f.get('price') || '').replace(/[^0-9.]/g, '')));
+    const price = toNum(f.get('price'));
     if (!p || !(price > 0)) return redirect(withMsg(safeBack, 'err', 'সঠিক দাম দিন।'));
     if (price === p.price) return redirect(safeBack);
     const old = p.price; delete p._hidden; p.price = price;
@@ -433,12 +435,12 @@ function productForm(url, user, p) {
       <label>ক্যাটাগরি *<select class="field" name="cat" required><option value="">বাছাই করুন</option>${CATEGORIES.map((c) => `<option value="${c.slug}"${c.slug === p.cat ? ' selected' : ''}>${c.bn} (${c.en})</option>`).join('')}</select></label>
       <label>মডেল নম্বর *<input class="field" name="model" value="${esc(p.model)}" required maxlength="40" placeholder="যেমন 580 বা 329 A"></label>
       <label>কোড<input class="field" name="code" value="${esc(p.code)}" maxlength="40" placeholder="যেমন SS-580"></label>
-      <label>দাম (৳) *<input class="field" name="price" inputmode="numeric" value="${esc(p.price)}" required placeholder="যেমন 48720"></label>
-      <label>আগের দাম (কাটা দাম, ঐচ্ছিক)<input class="field" name="regular_price" inputmode="numeric" value="${esc(p.regular_price ?? '')}"></label>
+      <label>বিক্রির দাম (৳), সাইটে এটাই দেখাবে *<input class="field" name="price" inputmode="numeric" value="${esc(p.price)}" required placeholder="যেমন 48720"></label>
+      <label>আগের দাম (ঐচ্ছিক, সাইটে কাটা অবস্থায় দেখাবে)<input class="field" name="regular_price" inputmode="numeric" value="${esc(p.regular_price ?? '')}"></label>
       <label>মাপ<input class="field" name="size" value="${esc(p.size)}" maxlength="120" placeholder='যেমন L-36" x W-22" x H-78"'></label>
       <label>কাঠ<input class="field" name="wood" value="${esc(p.wood)}" maxlength="40" list="woods"><datalist id="woods"><option value="Pine"><option value="Mahogany"><option value="Teak"><option value="Gamari"><option value="Shil Koroi"></datalist></label>
       <label>পালিশ<span class="checks">${Object.entries(POLISH).map(([k, v]) => `<label><input type="checkbox" name="polishes" value="${esc(k)}"${(p.polishes || []).includes(k) ? ' checked' : ''}> ${v.bn}</label>`).join('')}</span></label>
-      <label>ক্লিয়ারেন্স সেল<span class="checks"><label><input type="checkbox" name="sale" value="1"${p.sale ? ' checked' : ''}> পুরাতন শোরুমের সেলে দেখান</label></span><small class="muted">টিক দিলে "সেল" পাতায় আর হোমপেজে দেখাবে। আগের দাম ঘরে আসল দাম দিন, দাম ঘরে সেলের দাম; সাইটে আগের দাম কাটা অবস্থায় দেখাবে।</small></label>
+      <label>ক্লিয়ারেন্স সেল<span class="checks"><label><input type="checkbox" name="sale" value="1"${p.sale ? ' checked' : ''}> পুরাতন শোরুমের সেলে দেখান</label></span><small class="muted">টিক দিলে "সেল" পাতায় আর হোমপেজে দেখাবে। আগের দাম ঘরে আসল দাম দিন, বিক্রির দাম ঘরে সেলের দাম; সাইটে আগের দাম কাটা অবস্থায় দেখাবে।</small></label>
       <label>সেলের নোট (ঐচ্ছিক)<input class="field" name="sale_note" value="${esc(p.sale_note || '')}" maxlength="140" placeholder="যেমন: শোরুমে ডিসপ্লে করা, সামান্য দাগ আছে"></label>
       ${isNew ? '' : `<label>সাইটে<span class="checks"><label><input type="checkbox" name="hidden" value="1"${p._hidden ? ' checked' : ''}> লুকিয়ে রাখুন</label></span></label>`}
     </div>
@@ -514,12 +516,12 @@ async function saveProduct(env, user, f) {
   const fail = (m) => redirect(withMsg(backTo, 'err', m));
   const cat = String(f.get('cat') || '');
   const model = String(f.get('model') || '').trim().slice(0, 40);
-  const price = Math.round(Number(String(f.get('price') || '').replace(/[^0-9.]/g, '')));
-  const regRaw = String(f.get('regular_price') || '').replace(/[^0-9.]/g, '');
-  const regular = regRaw ? Math.round(Number(regRaw)) : null;
+  const price = toNum(f.get('price'));
+  const regular = toNum(f.get('regular_price')) || null;
   if (!catBySlug[cat]) return fail('ক্যাটাগরি বাছাই করুন।');
   if (!model || !slugify(model)) return fail('মডেল নম্বর দিন (ইংরেজি অক্ষর বা সংখ্যা)।');
   if (!(price > 0)) return fail('সঠিক দাম দিন।');
+  if (regular && regular <= price) return fail(`"আগের দাম" ঘরটা শুধু কাটা দাম দেখানোর জন্য, তাই এটা বর্তমান দামের (${money(price)}) চেয়ে বেশি হতে হবে। নতুন দাম "বিক্রির দাম" ঘরে লিখুন।`);
   let images;
   try { images = JSON.parse(String(f.get('images') || '[]')); } catch { images = []; }
   images = (Array.isArray(images) ? images : []).filter((im) => im && /^\/(img|media)\//.test(im.src) && /^\/(img|media)\//.test(im.sm || im.src))
@@ -569,7 +571,7 @@ async function saveProduct(env, user, f) {
     env.DB.prepare("UPDATE products SET data = ?, hidden = ?, updated_at = datetime('now'), updated_by = ? WHERE slug = ?").bind(JSON.stringify(p), hidden, user.username, slug),
     log(env, user, slug, changes.length === 1 && changes[0].startsWith('দাম') ? 'price' : 'edit', changes.join(', ') || null),
   ]);
-  return redirect(withMsg(backTo, 'ok', 'সেভ হয়েছে। সাইটে এখনই বদলে গেছে।'));
+  return redirect(withMsg(backTo, 'ok', `সেভ হয়েছে। সাইটে এখন দাম ${money(p.price)}${changes.length ? ` (বদলেছে: ${changes.join(', ')})` : ''}।`));
 }
 
 // ---------- users (super admin) ----------
